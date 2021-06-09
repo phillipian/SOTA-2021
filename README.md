@@ -1,2 +1,2 @@
-# SOTA-2021
-State of the Academy 2021
+# sota
+*The Phillipian*'s annual "State of the Academy" website.
