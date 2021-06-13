@@ -201,19 +201,83 @@ window.onload = () => {
     sota.pieChart({
         section: "campus",
         dataFile: "assets/data/campus/varsityathlete",
-        title: "Are you a varsity athlete?",
-        subtitle: "blah blah blah",
+        title: "Are you a varsity athlete?"
     });
-
 
     sota.stackedBarChart({
         section: "campus",
         dataFile: "assets/data/campus/ideologicaldiversity",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
         showLegend: true,
+        labelStyle: "onBar",
         title: "Do you think the school promotes ideological diversity in its selection of speakers?",
-        subtitle: "blah blah blah"
+    });
+
+        //new stuff 
+    sota.stackedBarChart({
+      section: "campus",
+      dataFile: "assets/data/campus/mlkday",
+      showLegend: true,
+      labelStyle: "onBar",
+      title: "Do you feel that the MLK Day curriculum is adequate?",
+    });
+
+    sota.stackedBarChart({
+      section: "campus",
+      dataFile: "assets/data/campus/antiracist",
+      showLegend: true,
+      labelStyle: "onBar",
+      title: "Do you think Andover’s anti-racist work is sufficient?",
+    });
+
+    sota.stackedBarChart({
+      section: "campus",
+      dataFile: "assets/data/campus/antiracismtaskforce",
+      showLegend: true,
+      labelStyle: "onBar",
+      title: "Do you feel the creation of the Anti-Racism Task Force was a productive choice in making Andover a more racially equitable, inclusive, and just community?",
+    });
+
+    sota.stackedBarChart({
+      section: "campus",
+      dataFile: "assets/data/campus/indigenousday",
+      showLegend: true,
+      labelStyle: "onBar",
+      title: "Do  you think that Andover should have a \"day on\" for Indigenous People's Day?",
+    });
+
+    sota.stackedBarChart({
+      section: "campus",
+      dataFile: "assets/data/campus/glorifyathletics",
+      showLegend: true,
+      labelStyle: "onBar",
+      title: "Do you think that Andover prioritizes athletics (compared to music, art, robotics, etc.)?",
+    });
+
+    sota.pieChart({
+      section: "campus",
+      dataFile: "assets/data/campus/shuman",
+      title: "Do you think that the Shuman Office of Admissions accurately presents the school?"
+    });
+
+    sota.barChart({
+      section: "campus", 
+      dataFile: "assets/data/campus/carbon_footprint",
+      displayPercentage: true,
+      title: "How often do you make conscious decisions to decrease your carbon footprint? A carbon footprint is \“a measure of the carbon emissions of a particular individual, organization, or community\” (Oxford Dictionary)."
+    });
+
+    sota.stackedBarChart({
+      section: "campus",
+      dataFile: "assets/data/campus/combat_climate_change",
+      showLegend: true,
+      labelStyle: "onBar",
+      title: "Do you feel like Andover is doing enough to combat climate change?",
+    });
+
+    sota.pieChart({
+      section: "campus",
+      dataFile: "assets/data/campus/divestfossilfuel",
+      title: "Do you believe that Andover should divest from fossil fuel companies? Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries)."
     });
 
     sota.sotaMasonry();
