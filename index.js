@@ -2,6 +2,9 @@ sota.sotaConfig.sections = [
     {"slug": "general", "name": "General", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"]},
     {"slug": "politics", "name": "Politics & Worldview", "colors": ["#2C3278", "#5D5797", "#7D78AD", "#948EB9", "#A8A3C6", "#BFBDD5", "#DFDBE7"]},
     {"slug": "campus", "name": "Campus Culture", "colors": sota.colorInterpolate("#AAA000")},
+    {"slug": "school", "name": "School", "colors": ["#812F54", "#AA7281", "#BF97A0", "#BF97A0", "#DCC5C3"]},
+    {"slug": "discipline", "name": "Discipline", "colors": ["#B53432", "#C74F50", "#D47173","#E4A8A6", "#F0D1CA"]},
+    {"slug": "community", "name": "Community Diversity", "colors": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"]},
     {"slug": "content", "name": "Content section", "colors": sota.colorInterpolate("#000000"), "content": `
     <div class="demo-content">
         <h2>Demo content</h2>
@@ -365,7 +368,7 @@ window.onload = () => {
     sota.pieChart({
         section: "politics",
         dataFile: "assets/data/politics/drug_regulation",
-        title:"Drug Regulation",
+        title:"Drug Regulation !NEED FIX!",
         subtitle:"Do you support the legalization of marijuana?"
     });
 
@@ -476,6 +479,375 @@ window.onload = () => {
       section: "campus",
       dataFile: "assets/data/campus/divestfossilfuel",
       title: "Do you believe that Andover should divest from fossil fuel companies? Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries)."
+    });
+
+// School
+
+    sota.bigNumber({
+      section: "school", number: "4.53", title: "Time Spent on Coursework", subtitle: "average hours spent on coursework daily,",
+    });
+
+    sota.lineGraph({section: "school", dataFile: "assets/data/school/gpa", maxVal: 160, title: "G.P.A", subtitle: "What was your rounded Winter 2020-2021 G.P.A?"})
+
+    sota.multiLineGraph({
+      section: "school",
+      dataFile: "assets/data/school/gpaXgender",
+      displayPercentage: true,
+      maxVal: 24,
+      minVal: 0,
+      title: "G.P.A. and Gender",
+      subtitle: "THIS IS WRONG"
+    })
+
+    sota.bigNumber({
+      section: "school", number: "5.50", title: "Overall Average G.P.A", subtitle: "Winter 2020-2021",
+    });
+
+    sota.barChart({
+      section: "school",
+      dataFile: "assets/data/school/grading_scale",
+      totalResp: 905,
+      title: "Grading Scale",
+      subtitle: "Do you think a \"4\" is a good grade?"
+    })
+
+    sota.lineGraph({
+        section: "school",
+        dataFile: "assets/data/school/gpa2017",
+        maxVal: 6.0,
+        minVal: 5.0,
+        title: "Average G.P.A Since 2017",
+        subtitle: "Editor's note: this question uses data from the 2017 to 2021 State of the Academy surveys.",
+    })
+
+    sota.pieChart({
+        section: "school",
+        dataFile: "assets/data/school/schedule",
+        totalResp: 899,
+        title: "Schedule Changes",
+        subtitle: "Are you satisfied with the way the school has scheduled classes, remote and on-campus, this year?"
+    })
+
+    sota.pieChart({
+        section: "school",
+        dataFile: "assets/data/school/switch_teacher",
+        sorted: false,
+        title: "Switching Teachers",
+        subtitle: "Have you ever switched or attempted to switch teachers within the same course in order to attain a better grade?"
+    });
+
+    sota.stackedColumnChart({
+        section: "school",
+        dataFile: "assets/data/school/collegeXclass",
+        title: "Andover College",
+        subtitle: "Do you think attending Andover affets your chances of attending a selective college?"
+    });
+
+    sota.stackedBarChart({
+        section: "school",
+        dataFile: "assets/data/school/extracurriculars",
+        labelStyle: "onBar",
+        showLegend: true,
+        title: "On Campus, I ...",
+        subtitle: "Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?"
+    });
+
+    sota.pieChart({
+        section: "school",
+        dataFile: "assets/data/school/teacher_care",
+        totalResp: 903,
+        title: "Teacher Support",
+        subtitle: "Do you think that the majority of your teachers care about your health and well-being?"
+    });
+
+    sota.pieChart({
+        section: "school",
+        dataFile: "assets/data/school/student_leader",
+        sorted: false,
+        title: "Student Leadership",
+        subtitle: "Are you currently a student leader (prefect, proctor, DSM, EBI Senior, Cluster or School Co-President) on campus?"
+    });
+
+    sota.pieChart({
+        section: "school",
+        dataFile: "assets/data/school/board_member",
+        sorted: false,
+        title: "Are you a board member of a club on campus?"
+    });
+
+    sota.stackedBarChart({
+        section: "school",
+        dataFile: "assets/data/school/children",
+        labelStyle: "onBar",
+        showLegend: true,
+        title: "Would you want your children to attend andover?"
+    });
+
+    sota.stackedBarChart({
+        section: "school",
+        dataFile: "assets/data/school/family_relationship",
+        labelStyle: "onBar",
+        showLegend: true,
+        title: "Andover and family",
+        subtitle: "Has attending Andover affected your relationship ith your family?"
+    });
+
+    sota.stackedBarChart({
+        section: "school",
+        dataFile: "assets/data/school/leaving",
+        labelStyle: "onBar",
+        showLegend: true,
+        title: "Leaving Andover",
+        subtitle: "Have you ever considered leaving Andover permanently?"
+    });
+
+    sota.bigNumber({
+      section: "school", number: "11.8%", title: "Learning Accommodations", subtitle: "of respondents have disability/disorder/impairment that affects their learning.",
+    });
+
+    sota.stackedBarChart({
+        section: "school",
+        dataFile: "assets/data/school/learning_disabilityXaccomodation",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        title: "Do you think Andover adequately accommodates students with learning disabilities?"
+    });
+
+    sota.pieChart({
+        section: "school",
+        dataFile: "assets/data/school/character",
+        sorted: false,
+        title: "Andover and Self",
+        subtitle: "Generally speaking, has attending Andover significantly affected your character?"
+    });
+
+    sota.barChart({
+        section: "school",
+        dataFile: "assets/data/school/come_to_andover",
+        title: "In retrospect, would you still make the decision to come to andover?",
+    });
+
+// Discipline
+
+    sota.bigNumber({
+      section: "discipline", number: "42.9%", title: "Major Offenses", subtitle: "of respondents have commited a major offense without being caught.",
+    });
+
+
+    sota.pieChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/CCCDC",
+        sorted: false,
+        title: "Have you ever sat before a ccc or a dc",
+    });
+
+    sota.columnChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/consequences",
+        totalResp: 895,
+        title: "Which of the following disciplinary consequences have you recieved?"
+    });
+
+    sota.stackedBarChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/effectiveXDC",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        title: "DC System Effectiveness",
+        subtitle: "Do you think that the DC system effectively disciplines students who are caught breaking school rules?"
+    });
+
+    sota.stackedBarChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/major_offensesXboarding",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Boarding vs. day students and major offenses",
+        subtitle: "Have you ever committed a major offense without being caught?"
+    });
+
+    sota.bigNumber({
+      section: "discipline", number: "36.0%", title: "Concerning Contraband", subtitle: "of respondents think that the administration should have the right to search an entire dorm for contraband material.",
+    });
+
+    sota.pieChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/cheated",
+        sorted: false,
+        title: "Cheating",
+        subtitle: "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?"
+    });
+
+    sota.stackedColumnChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/cheatedXclass",
+        title: "Cheating & Class !NEED FIX!",
+        subtitle: "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?"
+    });
+
+    sota.barChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/understand_processes",
+        totalResp: 880,
+        displayPercentage: true,
+        title: "DC Understanding",
+        subtitle: "Do you understand the CCC and DC processes?"
+    });
+
+    sota.pieChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/cheatedXcovid",
+        sorted: false,
+        title: "Cheating and Covid",
+        subtitle: "Has online school influenced the frequency in which you commit academic dishonesty?"
+    });
+
+    sota.stackedBarChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/plagiarized",
+        sorted: false,
+        title: "Plagiarizing",
+        subtitle: "Have you ever plagiarized while at Andover?"
+    });
+
+    sota.stackedBarChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/favors_privilegedXincome",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: false,
+        title: "The dc system, privilege, and net family income",
+        subtitle: "Do you think that the school's disciplinary system favors students of privileged backgrounds?"
+    });
+
+    sota.pieChart({
+        section: "discipline",
+        dataFile: "assets/data/discipline/cruise",
+        sorted: false,
+        title: "Cruising",
+        subtitle: "Have you ever cruised (stayed out of your dorm or on campus after sign-in)?"
+    });
+
+// Community Diversity
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/faculty_diversity",
+        totalResp: 1020,
+        displayPercentage: true,
+        title: "Faculty Diversity",
+        subtitle: "Do you think the faculty is lacking in diversity in _______________ ?"
+    });
+
+    sota.stackedBarChart({
+        section: "community",
+        dataFile: "assets/data/community/faculty_diversityXgender",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        title: "Faculty Diversity By Gender",
+        subtitle: "Do you think the faculty is lacking in diversity of gender?"
+    });
+
+    sota.stackedBarChart({
+        section: "community",
+        dataFile: "assets/data/community/faculty_diversityXrace",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        title: "Faculty Diversity By Race",
+        subtitle: "Do you think the faculty is lacking in diversity of race?"
+    });
+
+    sota.stackedBarChart({
+        section: "community",
+        dataFile: "assets/data/community/faculty_diversityXsocioeconomic",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        title: "Faculty Diversity By Percieved Socioeconomic Class",
+        subtitle: "Do you think the faculty is lacking in diversity of socioeconomic status?"
+    });
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/social_divide",
+        totalResp: 875,
+        displayPercentage: true,
+        title: "Social Divide",
+        subtitle: "Do you feel like there is a social divide at Andover between students of different _______________ ?"
+    });
+
+    sota.stackedBarChart({
+        section: "community",
+        dataFile: "assets/data/community/social_divideXclass",
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        showLegend: false,
+        title: "Social Divide by Class Year !NEED FIX!",
+        subtitle: "Do you feel like there is a social divide at Andover (any)?"
+    });
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/discrimination",
+        totalResp: 864,
+        displayPercentage: true,
+        title: "Discrimination",
+        subtitle: "Have you ever felt discriminated against at Andover due to your __________?"
+    });
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/faculty_support",
+        totalResp: 848,
+        displayPercentage:true,
+        title: "Faculty Support",
+        subtitle: "Which of the faculty/staff members in your life do you feel are supportive of a diverse range of students?"
+    });
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/identity_discussion",
+        totalResp: 870,
+        displayPercentage: true,
+        title: "Talking the Talk",
+        subtitle: "Do you think that there are facets of identity that are not discussed enough at Andover?"
+    });
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/classroom_comfort",
+        totalResp: 871,
+        displayPercentage: true,
+        title: "Classroom",
+        subtitle: "While at Andover, have any of the following aspects of your identity significantly and consistently affected your level of comfort in a classroom setting?"
+    });
+
+    sota.pieChart({
+        section: "community",
+        dataFile: "assets/data/community/ebi",
+        sorted: false,
+        title: "EBI Curriculumn",
+        subtitle: "Do you think the EBI curriculum at Andover is effective in helping students become better community members?"
+    });
+
+    sota.barChart({
+        section: "community",
+        dataFile: "assets/data/community/leadership",
+        totalResp: 862,
+        displayPercentage: true,
+        title: "Leadership Positions",
+        subtitle: "Do you think your capability to attain leadership positions at Andover is affected by your __________?"
+    });
+
+    sota.stackedBarChart({
+        section: "community",
+        dataFile: "assets/data/community/day_student",
+        title: "Day Students",
+        subtitle: "Do you think day students are able to integrate enough with boarding students at Andover this year?"
     });
 
     sota.sotaMasonry();
