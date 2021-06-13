@@ -197,20 +197,18 @@ window.onload = () => {
 
 // Politics
 
-    //new charts
+    //Campus Culture
     sota.pieChart({
         section: "campus",
-        dataFile: "assets/data/varsityathletetest",
+        dataFile: "assets/data/campus/varsityathlete",
         title: "Are you a varsity athlete?",
         subtitle: "blah blah blah",
     });
 
-    sota.pieChart({section: "campus", dataFile: "assets/data/test", title: "Pie Chart",
-    subtitle: "Distribution of students by home community type"});
 
     sota.stackedBarChart({
         section: "campus",
-        dataFile: "assets/data/ideologicaldiversity",
+        dataFile: "assets/data/campus/ideologicaldiversity",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         showLegend: true,
