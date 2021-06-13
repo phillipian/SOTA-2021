@@ -93,7 +93,7 @@ window.onload = () => {
       dataFile: "assets/data/general/race",
       totalResp: 1057,
       title: "What is your race?",
-      subtitle: "Editor’s Note: For both questions, respondents were given the option to select more than one answer if applicable.",
+      subtitle: "Editor’s Note: respondents were given the option to select more than one answer if applicable.",
     });
 
     sota.barChart({
@@ -101,7 +101,7 @@ window.onload = () => {
       dataFile: "assets/data/general/ethnicity",
       totalResp: 1349,
       title: "What is your ethnicity?",
-      subtitle: "Editor’s Note: For both questions, respondents were given the option to select more than one answer if applicable.",
+      subtitle: "Editor’s Note: respondents were given the option to select more than one answer if applicable.",
     });
 
     sota.stackedBarChart({
@@ -175,6 +175,7 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         showLegend: false,
         title: "PARENT LEGACY & INCOME",
+        subtitle: "Did any of your guardian(s) attend Andover? What is your net family income?"
     }) //better if 2 pie charts
 
     sota.pieChart({
@@ -185,6 +186,16 @@ window.onload = () => {
       subtitle: "Are you a varsity athlete?"
     });
 
+    sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/religion",
+    totalResp: 1075,
+    displayPercentage: true,
+    title: "Religious Affiliation",
+    subtitle: "With which religion/faith system do you currently identify, if any?"
+    });
+
+// Politics
 
     //new charts
     sota.pieChart({
