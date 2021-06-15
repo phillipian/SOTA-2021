@@ -854,12 +854,24 @@ window.onload = () => {
         subtitle: "Do you think day students are able to integrate enough with boarding students at Andover this year?"
     });
 
+    //sex 
+    sota.stackedBarChart({
+        section: "sex",
+        dataFile: "assets/data/sex/sexXclass",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Sexual Activity by class year",
+        subtitle: "Have you ever engaged in sexual activity? NEED FIX"
+    });
+
     sota.barChart({
         section:"sex",
         dataFile: "assets/data/sex/sexual_activity",
         displayPercentage: true,
+        groupLabelStyle: "onBar",
         totalResp: 949,
-        title: "Have you ever participated in sexual activity?"
+        title: "What form(s) of sexual activity have you engaged in?"
     });
 
     sota.stackedBarChart({
@@ -906,10 +918,11 @@ window.onload = () => {
     });
 
 
-    sota.pieChart({
+    sota.stackedBarChart({
         section:"sex",
         dataFile: "assets/data/sex/rape_culture",
         displayPercentage: true,
+        groupLabelStyle: "onBar",
         title: "Do you believe that there is rape culture at Andover?",
         subtitle: "Rape culture: \“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse\” (Oxford Dictionaries)"
     });
@@ -932,6 +945,29 @@ window.onload = () => {
 
     sota.stackedBarChart({
         section: "sex",
+        dataFile: "assets/data/sex/committed_relationship",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "Have you ever been in a committed relationship? NEED FIX"
+    });
+
+    sota.stackedColumnChart({
+        section: "sex",
+        dataFile: "assets/data/sex/inter-class_relationship",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "If you are currently in a committed relationship, what class is your partner in? NEED FIX"
+    });
+
+    sota.pieChart({
+        section:"sex",
+        dataFile: "assets/data/sex/sexed",
+        displayPercentage: true,
+        title: "Do you think that your sexual education at Andover has been/is adequate?"
+    });
+
+    sota.stackedBarChart({
+        section: "sex",
         dataFile: "assets/data/sex/masturbation",
         showLegend: true,
         labelStyle: "onBar",
@@ -944,7 +980,39 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Would you feel comfortable telling your friends that you masturbate?"
+        title: "Would you feel comfortable telling your friends that you masturbate? NEED FIX"
+    });
+
+    sota.barChart({
+        section:"sex",
+        dataFile: "assets/data/sex/porn",
+        displayPercentage: true,
+        title: "If you watch pornography/read pornographic materials, how frequently, on average, do you do so?"
+    });
+
+    sota.columnChart({
+        section:"sex",
+        dataFile: "assets/data/sex/harassed",
+        displayPercentage: true,
+        totalResp: 949,
+        title: "Have you ever been sexually harassed?"
+    });
+
+    sota.columnChart({
+        section:"sex",
+        dataFile: "assets/data/sex/fetishization",
+        displayPercentage: true,
+        totalResp: 949,
+        title: "Have you ever been sexualized (including being fetishized and hypersexualized) or desexualized (including being defeminized and emasculated) due to your racial-ethnic identity?"
+    });
+
+
+    sota.columnChart({
+        section:"sex",
+        dataFile: "assets/data/sex/assaulted",
+        displayPercentage: true,
+        totalResp: 949,
+        title: "Have you ever been sexually assaulted?"
     });
 
     sota.pieChart({
@@ -960,6 +1028,7 @@ window.onload = () => {
         displayPercentage: true,
         title: "Have you ever received a sexually explicit photo?"
     });
+
 
 
     //drugs
@@ -991,6 +1060,14 @@ window.onload = () => {
         title: "Have you ever used marijuana?"
     });
 
+    sota.barChart({
+        section:"drugs",
+        dataFile: "assets/data/drugs/drug_frequency",
+        displayPercentage: true,
+        totalResp: 949,
+        title: "How often do you consume recreational drugs or alcohol on campus?"
+    });
+
     sota.pieChart({
         section:"drugs",
         dataFile: "assets/data/drugs/normalized",
@@ -998,12 +1075,25 @@ window.onload = () => {
         title: "Do you think that the use of recreational drugs or alcohol is normalized at Andover?"
     });
 
-    sota.barChart({
+    sota.pieChart({
         section:"drugs",
-        dataFile: "assets/data/drugs/drug_frequency",
+        dataFile: "assets/data/drugs/influence_friends",
         displayPercentage: true,
-        totalResp: 949,
-        title: "How often do you consume recreational drugs or alcohol on campus?"
+        title: "Do you think that recreational drug or alcohol use significantly influences your friendships at Andover?"
+    });
+
+    sota.pieChart({
+        section:"drugs",
+        dataFile: "assets/data/drugs/dorm_drug",
+        displayPercentage: true,
+        title: "Do you think your dorm significantly influences how you think about/use drugs and alcohol?"
+    });
+
+    sota.pieChart({
+        section:"drugs",
+        dataFile: "assets/data/drugs/study_drugs",
+        displayPercentage: true,
+        title: "Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during your time at Andover?"
     });
 
     sota.barChart({
@@ -1063,6 +1153,11 @@ window.onload = () => {
         subtitle: "Editor's note: 22 people skipped"
     });
 
+    sota.bigNumber({
+        section:"wellness",
+        number: "6.91",
+        subtitle:"Average hours of sleep per night of an Andover student"
+    })
 
     sota.pieChart({
         section:"wellness",
@@ -1076,6 +1171,22 @@ window.onload = () => {
         dataFile: "assets/data/wellness/insecure_brain",
         sorted: false,
         title: "Do you feel insecure about your academic ability and/or intelligence?"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/happiness",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "Generally speaking, do you consider yourself happy at Andover?"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/others_happiness",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "Generally speaking, do you think that Andover students are happy?"
     });
 
     sota.barChart({
@@ -1179,14 +1290,153 @@ window.onload = () => {
         subtitle:"Editor's note: 25 skipped"
     });
 
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/eating_disorder",
+        showLegend: true,
+        labelStyle: "onBar",
+        // groupLabelStyle: "onBar",
+        title: "Have you ever had, or do you currently have, an eating disorder?"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/diagnosed",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Have you ever been diagnosed with.."
+    });
+
     //covid-19
+    sota.stackedBarChart({
+        section: "covid19",
+        dataFile: "assets/data/covid19/residential_status",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        subtitle: "What was your residential status during Fall and Spring Term? Editor’s Note: Only members of the class of 2021 boardedduring the Winter Term. All other students were learned remotely.",
+        title: "Residential Status"
+    });
+
     sota.pieChart({
         section:"covid19",
-        dataFile: "assets/data/covid19/wifi",
+        dataFile: "assets/data/covid19/feel_safe",
+        displayPercentage: true,
+        title: "Safety on Campus",
+        subtitle: "If you have been on campus during this academic year, did Andover's Covid-19 prevention guidelines and restrictions make you feel physically safe?"
+    });
+
+    sota.pieChart({
+        section:"covid19",
+        dataFile: "assets/data/covid19/quiet_spaces",
+        displayPercentage: true,
+        title: "Quiet Spaces",
+        subtitle: "Do you have access to quiet spaces for academic purposes?"
+    });
+    
+    sota.pieChart({
+        section:"covid19",
+        dataFile: "assets/data/covid19/precautionary_measures",
+        displayPercentage: true,
+        title: "Access to Quiet spaces",
+        subtitle: "Have you been practicing Andover's Covid-19 precautionary measures (social distancing, washing hands often, and wearing a mask) on campus?"
+    });
+
+    sota.stackedBarChart({
+        section: "covid19",
+        dataFile: "assets/data/covid19/andover_response",
+        showLegend: true,
+        title: "Andover's Reponse to the pandemic",
+        subtitle: "Generally speaking, how would you categorize Andover's response to the COVID-19 pandemic?"
+    });
+
+    sota.bigNumber({
+        section:"covid19",
+        number:"47",
+        title:"WIFI/internet access",
+        subtitle:"respondents did not have consistent reliable access to WiFi/Internet where they stayed for the majority of their remote learning experience."
+    })
+
+    sota.barChart({
+        section:"covid19",
+        dataFile: "assets/data/covid19/time_zone",
+        displayPercentage: true,
+        title: "Time zones",
+        subtitle: "What time zone are you in relation to Andover (EDT)?"
+    });
+
+
+    sota.pieChart({
+        section:"covid19",
+        dataFile: "assets/data/covid19/remote_learning_effective",
+        displayPercentage: true,
+        title: "adequacy of learning",
+        subtitle: "Do you think your remote learning experience has been effective?"
+    });
+
+    sota.pieChart({
+        section:"covid19",
+        dataFile: "assets/data/covid19/grading_policy",
+        displayPercentage: true,
+        title: "Grading Policy Changes",
+        subtitle: "Are you satisfied with the changes Andover has implemented to the grading policies over the past academic year?"
+    });
+
+    sota.bigNumber({
+        section:"covid19",
+        number:"8.7%",
+        title:"covid-19 infections",
+        subtitle:"of respondents have tested postitive for Covid-19"
+    })
+
+    sota.barChart({
+        section: "covid19",
+        dataFile: "assets/data/covid19/know_someone_testpositive",
         displayPercentage: true,
         subtitle: "72 skipped",
-        title: "Do you have access to WiFI/Internet where you are staying?"
+        title: "Do you know someone personally who has tested positive for COVID-19?"
     });
+
+    sota.bigNumber({
+        section:"covid19",
+        number:"25.6%",
+        title:"LIVING WITH SOMEONE WHO IS IMMUNOCOMPROMISED",
+        subtitle:"of respondents live with someone who is immunocompromised"
+    })
+
+    sota.stackedBarChart({
+        section: "covid19",
+        dataFile: "assets/data/covid19/biden_response",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        title: "us response to covid-19",
+        subtitle: "How would you categorize the Biden Administrations' response to the COVID-19 pandemic?"
+    });
+
+    sota.pieChart({
+        section:"covid19",
+        dataFile: "assets/data/covid19/mental_health",
+        displayPercentage: true,
+        title: "Mental health and the pandemic",
+        subtitle: "Has the Covid-19 pandemic impacted your mental health?"
+    });
+
+    sota.stackedBarChart({
+        section: "covid19",
+        dataFile: "assets/data/covid19/nonessential_travel",
+        showLegend: true,
+        title: "nonessential travel",
+        subtitle: "Have you gone on vacation or engaged in nonessential travel since March 11, 2020?"
+    });
+       
+    // sota.pieChart({
+    //     section:"covid19",
+    //     dataFile: "assets/data/covid19/wifi",
+    //     displayPercentage: true,
+    //     subtitle: "72 skipped",
+    //     title: "Do you have access to WiFI/Internet where you are staying?"
+    // });
     
     sota.pieChart({
         section:"covid19",
@@ -1196,36 +1446,13 @@ window.onload = () => {
         title: "Do you have access to your own device for academic purposes?"
     });
 
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/quiet_spaces",
-        displayPercentage: true,
-        subtitle: "71 skipped",
-        title: "Do you have access to quiet spaces for academic purposes?"
-    });
-
-    sota.barChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/time_zone",
-        displayPercentage: true,
-        title: "What time zone are you in relation to Andover (EDT)? Please round up to the nearest hour."
-    });
-
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/remote_learning_effective",
-        displayPercentage: true,
-        subtitle: "78 skipped",
-        title: "Do you think your remote learning experience has been effective?"
-    });
-
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/live_with_immunocompromised",
-        displayPercentage: true,
-        subtitle: "73 skipped",
-        title: "Do you live with someone who is immunocompromised?"
-    });
+    // sota.pieChart({
+    //     section:"covid19",
+    //     dataFile: "assets/data/covid19/live_with_immunocompromised",
+    //     displayPercentage: true,
+    //     subtitle: "73 skipped",
+    //     title: "Do you live with someone who is immunocompromised?"
+    // });
 
     sota.pieChart({
         section:"covid19",
@@ -1241,77 +1468,7 @@ window.onload = () => {
         displayPercentage: true,
         subtitle: "71 skipped",
         title: "Have you been vaccinated for Covid-19?"
-    });
-
-    sota.barChart({
-        section: "covid19",
-        dataFile: "assets/data/covid19/know_someone_testpositive",
-        displayPercentage: true,
-        subtitle: "72 skipped",
-        title: "Do you know someone personally who has tested positive for COVID-19?"
-    });
-
-    sota.stackedBarChart({
-        section: "covid19",
-        dataFile: "assets/data/covid19/andover_response",
-        showLegend: true,
-        labelStyle: "offBar", //?
-        subtitle: "78 skipped",
-        title: "Generally speaking, how would you categorize Andover's response to the COVID-19 pandemic?"
-    });
-
-    sota.stackedBarChart({
-        section: "covid19",
-        dataFile: "assets/data/covid19/biden_response",
-        showLegend: true,
-        labelStyle: "offBar", //?
-        subtitle: "78 skipped",
-        title: "How would you categorize the Biden Administrations' response to the COVID-19 pandemic?"
-    });
-
-
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/precautionary_measures",
-        displayPercentage: true,
-        subtitle: "73 skipped",
-        title: "Have you been practicing Andover's Covid-19 precautionary measures (social distancing, washing hands often, and wearing a mask) on campus?"
-    });
-
-    sota.stackedBarChart({
-        section: "covid19",
-        dataFile: "assets/data/covid19/nonessential_travel",
-        showLegend: true,
-        labelStyle: "offBar", //?
-        subtitle: "72 skipped",
-        title: "Have you gone on vacation or engaged in nonessential travel since March 11, 2020?"
-    });
-
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/fall_residentialstatus",
-        displayPercentage: true,
-        subtitle: "72 skipped",
-        title: "What was your residential status during the Fall Term?"
-    });
-    
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/spring_residentialstatus",
-        displayPercentage: true,
-        subtitle: "72 skipped",
-        title: "What is your residential status during the Spring Term?"
-    });
-
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/feel_safe",
-        displayPercentage: true,
-        subtitle: "72 skipped",
-        title: "If you have been on campus during this academic year, did Andover's Covid-19 prevention guidelines and restrictions make you feel physically safe?"
-    });
-
-    
+    });    
     sota.pieChart({
         section:"covid19",
         dataFile: "assets/data/covid19/place_of_stay",
@@ -1319,25 +1476,6 @@ window.onload = () => {
         subtitle: "74 skipped",
         title: "Where did you stay for the majority of your remote learning experience?"
     });
-
-      
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/grading_policy",
-        displayPercentage: true,
-        subtitle: "77 skipped",
-        title: "Are you satisfied with the changes Andover has implemented to the grading policies over the past academic year?"
-    });
-
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/mental_health",
-        displayPercentage: true,
-        subtitle: "75 skipped",
-        title: "Has the Covid-19 pandemic impacted your mental health?"
-    });
-       
-
 
     sota.sotaMasonry();
 }
