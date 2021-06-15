@@ -499,6 +499,91 @@ window.onload = () => {
       title: "Do you believe that Andover should divest from fossil fuel companies? Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries)."
     });
 
+    sota.pieChart({
+        section: "campus",
+        dataFile: "assets/data/campus/supportive",
+        title: "Do you think your teachers/other adults on campus have been sufficiently supportive or flexible during significant and possibly traumatic global events over the past year?"
+    });
+
+    sota.pieChart({
+        section: "campus",
+        dataFile: "assets/data/campus/virtual_support",
+        title: "Did you attend any of the virtual support sessions that Andover provided after significant and possibly traumatic global events (community spaces with Sykes, the Brace Center, the Chaplaincy, trauma counseling, etc.) and if so, were they helpful?"
+    });
+
+    sota.pieChart({
+        section: "campus",
+        dataFile: "assets/data/campus/environment_impact",
+        title: "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?"
+    });
+
+
+    sota.pieChart({
+        section: "campus",
+        dataFile: "assets/data/campus/combat_climate",
+        title: "Do you feel like Andover is doing enough to combat climate change?"
+    });
+
+    sota.pieChart({
+        section: "campus",
+        dataFile: "assets/data/campus/environmental_justice",
+        title: "Have your classes covered climate change and other environmental justice issues?"
+    });
+
+    sota.stackedBarChart({
+        section: "campus",
+        dataFile: "assets/data/campus/divestXpolitical",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "Do you believe that Andover should divest from fossil fuel companies? X Political affiliation"
+    });
+
+    sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/idea_diversityXpolitical",
+    showLegend: true,
+    groupLabelStyle: "onBar",
+    labelStyle: "onBar",
+    title: "Do you think the school promotes ideological diversity in its selection of speakers? X Political affiliation"
+    });
+
+    sota.stackedBarChart({
+        section: "campus",
+        dataFile: "assets/data/campus/antiracismXclass",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "Do you feel the creation of the Anti-Racism Task Force was a productive choice in making Andover a more racially equitable, inclusive, and just community? x class "
+        });
+
+    sota.stackedBarChart({
+        section: "campus",
+        dataFile: "assets/data/campus/prioritizeXvarsity",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "Do you think that Andover prioritizes athletics? X Varsity athlete"
+        });
+    
+    sota.stackedBarChart({
+        section: "campus",
+        dataFile: "assets/data/campus/antiracismXrace",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "Do you think Andover’s anti-racist work is sufficient? X What is your race?"
+        });
+
+    sota.stackedBarChart({
+        section: "campus",
+        dataFile: "assets/data/campus/antiracistXclass",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "Do you think Andover’s anti-racist work is sufficient? X Class year"
+        });
+
 // School
 
     sota.bigNumber({

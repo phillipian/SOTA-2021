@@ -1,10 +1,9 @@
-group,Yes,No
-
-Communist	85.71	14.29
-Conservative	36.08	63.92
-Independent	74.58	25.42
-Liberal	91.61	8.39
-Libertarian	48.28	51.72
-Socialist	93.75	6.25
-Other	85.71	14.29
-Unsure	77.72	22.28
+group,yes,no
+Communist,85.71,14.29
+Conservative,36.08,63.92
+Independent,74.58,25.42
+Liberal,91.61,8.39
+Libertarian,48.28,51.72
+Socialist,93.75,6.25
+Other,85.71,14.29
+Unsure,77.72,22.28
