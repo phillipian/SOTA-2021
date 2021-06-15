@@ -876,7 +876,7 @@ window.onload = () => {
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         title: "Sexual Activity by class year",
-        subtitle: "Have you ever engaged in sexual activity? NEED FIX"
+        subtitle: "Have you ever engaged in sexual activity?"
     });
 
     sota.barChart({
@@ -1180,6 +1180,24 @@ window.onload = () => {
         title: "Do you feel insecure about your body, physical health, and/or appearance?"
     });
 
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/insecureXgender",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "body insecurity x gender"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/insecureXvarsity",
+        showLegend: true,
+        groupLabelStyle: "onBar",
+        labelStyle: "onBar",
+        title: "body insecurity x varsity athletics"
+    });
+
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/insecure_brain",
@@ -1220,8 +1238,17 @@ window.onload = () => {
         subtitle: "Editor's note: 26 skipped"
     });
 
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/skip_mealXdietary_restriction",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "How often does a dietary restriction prevent you from eating at least one main course meal offered in Commons?"
+    });
 
-    sota.barChart({
+
+    sota.columnChart({
         section:"wellness",
         dataFile: "assets/data/wellness/hours_social_media",
         sorted: false,
@@ -1243,6 +1270,24 @@ window.onload = () => {
         sorted: false,
         title: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
         subtitle:"Editor's note: 45 skipped"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/sykesmentalXseencounselor",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you seen a counselor?"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/sykesmentalXdepression",
+        groupLabelStyle: "onBar",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Depression Diagnosis"
     });
 
     sota.pieChart({
@@ -1321,6 +1366,25 @@ window.onload = () => {
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         title: "Have you ever been diagnosed with.."
+    });
+
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/anxietyXgender",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Anxiety x Gender "
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/anxietyXclass",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Anxiety x Class "
     });
 
     //covid-19
