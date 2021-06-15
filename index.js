@@ -1,22 +1,33 @@
 sota.sotaConfig.sections = [
     {"slug": "general", "name": "General", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"]},
-    {"slug": "politics", "name": "Politics & Worldview", "colors": ["#2C3278", "#5D5797", "#7D78AD", "#948EB9", "#A8A3C6", "#BFBDD5", "#DFDBE7"]},
-    {"slug": "campus", "name": "Campus Culture", "colors": sota.colorInterpolate("#AAA000")},
-    {"slug": "school", "name": "School", "colors": ["#812F54", "#AA7281", "#BF97A0", "#BF97A0", "#DCC5C3"]},
-    {"slug": "discipline", "name": "Discipline", "colors": ["#B53432", "#C74F50", "#D47173","#E4A8A6", "#F0D1CA"]},
-    {"slug": "community", "name": "Community Diversity", "colors": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"]},
-    {"slug": "drugs", "name": "Drugs & Alcohol", "colors": sota.colorInterpolate("#E77929")},
-    {"slug": "wellness", "name": "Wellness", "colors": sota.colorInterpolate("#6CB645")},
-    {"slug": "sex", "name": "sex", "colors": sota.colorInterpolate("#FF69B4")},
-    {"slug": "covid19", "name": "COVID-19", "colors": sota.colorInterpolate("#008244")},
-    {"slug": "content", "name": "Content section", "colors": sota.colorInterpolate("#000000"), "content": `
-    <div class="demo-content">
-        <h2>Demo content</h2>
-        <p>This is a demo of a content section. Instead of graphs, you can put raw HTML here and format to your heart's content.</p>
-    </div>
-`}
+    {"slug": "politics", "name": "Politics", "colors": ["#2C3278", "#5D5797", "#7D78AD", "#948EB9", "#A8A3C6", "#BFBDD5", "#DFDBE7"],
+      "blurb": "After the increased media coverage of social and systemic injustices this past year, 40.7% of respondents’ political views shifted to the left, while 11.8% respondents reported that their views shifted to the right, and 47.6% believe their ideologies remained the same. However, support for the Black Lives Matter Movement did not drastically change from the previous year. From the 89.9% of respondents who supported the movement in the 2020 State of the Academy, 90.4% of respondents support the movement in 2021––after the racial justice protests of the spring and summer of 2020 sparked by George Floyd’s murder and nationwide police brutality. While 33.3% of respondents believe that white people can experience racism, that number is 44.9% among Juniors and 23.3% among Seniors. An overwhelming majority of respondents believe that corporations and the government are responsible for addressing climate change—92.2% and 92.5% respectively—while 75.9% of respondents believe that individual people are responsible, and 1.5% say that humans are not responsible at all. "
+    },
+    {"slug": "campus", "name": "Campus Culture", "colors": ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
+      "blurb": "In response to Andover’s recent emphasis on anti-racist work, 60.1% of respondents believe that Andover’s anti-racist work is at least somewhat sufficient. While 34.6% believe that the Martin Luther King Jr. Day’s curriculum is adequate, 60.4% of respondents advocate for a similar ‘day on’ for Indigenous Peoples’ Day. A majority of respondents (57.9%) say that the Shuman Office of Admissions does not accurately represent the school. 73.2% of non-Varsity athletes believe that Andover prioritizes athletics over other extracurriculars, while 62.4% of Varsity athletes say the same. Only 11.5% of respondents believe that Andover is doing enough to combat climate change. "
+    },
+    {"slug": "school", "name": "School", "colors": ["#812F54", "#AA7281", "#BF97A0", "#BF97A0", "#DCC5C3"],
+      "blurb" : "At Andover, students spend an average of 4.5 hours on homework per day. In comparison to previous years since 2017, this year’s respondents hold the highest average rounded Winter 2020-2021 G.P.A. of 5.50. The administration’s removal of ‘2’ and ‘3’ grades in favor of implementing a ‘P’ for passing in order to accommodate for the unprecedented circumstances of the pandemic may have contributed to this inflation. 39.5% of respondents have switched or attempted to switch teachers in order to attain a better grade, and only 16.1% of respondents believe a ‘4’ is a good grade. While 30.5% of respondents have considered leaving Andover permanently, 87.7% would still make the decision to attend Andover in the first place. Additionally, 73.2% of respondents participate in extracurricular activities because they believe it will help their chances of attending a selective college. "
+    },
+    {"slug": "discipline", "name": "Discipline", "colors": ["#B53432", "#C74F50", "#D47173","#E4A8A6", "#F0D1CA"],
+      "blurb": "When an Andover student has committed a major offense, they are called upon a Disciplinary Committee (D.C.), however only 9.0% of respondents fully understand how the process works. 3.0% of respondents have sat before a D.C., and 77.9% of respondents believe that the D.C. system favors students with privileged backgrounds. When correlated with income, 75.5% of students whose net family income is $500,000 or above believe that the D.C. system favors privilege as opposed to 97.1% of students whose net family income is $34,999 or below. 42.9% of respondents have committed a major offense without being caught, and 52.1% of respondents reported committing academic dishonesty more frequently than they did prior to the pandemic. "
+    },
+    {"slug": "sex", "name": "Sex", "colors": ["#D5127D", "#DF5694", "#E680A9", "#ECA8C1", "#F8D3DD", "#fbe7ec"],
+      "blurb": "At Andover, 84.3% of Juniors, 73.1% of Lowers, 60.8% of Uppers, and 40.2% of Seniors have never engaged in sexual activity—defined as digital, oral, vaginal, or anal sex. 80.2% of respondents believe that there is a hook-up culture at Andover, but 23.8% of respondents have felt pressured to participate in it. 78.1% of men feel comfortable telling friends that they masturbate, while only 38.1% of women feel the same way. 41.1% of respondents believe that a rape culture exists at Andover. 25.2% of respondents reported having been sexualized or desexualized due to their racial-ethnic identity, with 15.8% of respondents experiencing sexual racism on-campus. "
+    },
+    {"slug": "drugs", "name": "Drugs & Alcohol", "colors": ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
+      "blurb": "52.8% of respondents have recreationally consumed alcohol either on campus, off campus, or both. Additionally, 33.1% of student leaders have consumed drugs or alcohol in their dorms.70.7% of respondents believe that the use of recreational drugs or alcohol is normalized at Andover, while 18.0% of respondents have felt pressured by recreational drugs or alcohol on campus. 21.6% of respondents reported that they consume recreational drugs or alcohol more frequently than they did prior to the pandemic."
+    },
+    {"slug": "wellness", "name": "Wellness", "colors": ["#69B645", "#98C970", "#B1D281", "#CEDFA6", "#E3EFCE"],
+      "blurb": "Only 26.4% of respondents reported having sufficient time to adequately take care of themselves in their day-to-day life as an Andover student, with another 54.0% saying they had somewhat enough time. On average, Andover students sleep under seven hours per night. 67.4% of respondents report skipping meals to catch up on sleep or homework. Moreover, 27.5% of respondents said that due to dietary restrictions, they were prevented from eating a main course meal from Paresky Commons at least once per month. While 83.4% of respondents consider themselves happy at Andover, just 68.9% of respondents think that Andover students are happy. A majority of respondents (51.3%) believe that the mental health and counseling resources provided by the Sykes Wellness Center are not sufficient. 79.8% of respondents have felt insecure about their intelligence, and 82.4% of respondents have felt insecure about their physical appearance. When correlated with gender identity, 69.4% of men feel insecure about their physical appearance as opposed to 92.9% of women. "
+    },
+    {"slug": "covid19", "name": "COVID-19", "colors": ["#088446", "#32A068", "#7CC193", "#B2DAB8", "#E2F1E1"],
+      "blurb" : "The Covid-19 pandemic has caused widespread closures across the world, pushing Andover’s spring term online. 89.2% of SOTA respondents returned home for the spring term, and 97.8% are staying with family. As of the closure of the SOTA survey, 49.0% of respondents personally know someone who has tested positive for Covid-19. 89.1% of respondents believe that Andover has had enough of a reaction to the pandemic, while 50.6% of respondents have found their remote learning experience adequately educational."
+    },
+    {"slug": "community", "name": "Community Diversity", "colors": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"],
+      "blurb": "In regards to what causes social divide between students at Andover, 49.6% of respondents believed it to be sexual orientation, 65.6% of respondents believed it to be political belief, 60.5% of respondents believed it to be socioeconomic status, and 61.6% of respondents believed it to be race (respondents may overlap). 95.2% of respondents from the Class of 2021 believe that social divides exist at Andover, while 81.0% of respondents from the Class of 2024 believe the same. 32.0% of respondents who identify as white believe that the faculty is lacking in racial diversity, while 68.9% of Black-identifying respondents, 66.7% of Indigenous-identifying respondents, 41.7% of Asian-identifying respondents, and 33.3% of Native Hawaiian and Pacific Islander-identifying respondents say the same. "
+    },
 ]
-
 
 sota.setColors(sota.sotaConfig);
 sota.setStyles(sota.sotaConfig);
@@ -25,6 +36,9 @@ sota.setStyles(sota.sotaConfig);
 // required only if you want to generate default layout containers. Can also specify directly through HTML and useselectors for graphs
 sota.createSections(sota.sotaConfig);
 
+// optional, render navbar based on sotaConfig.sections
+// make sure you call createSections first!
+sota.sotaNavbar(sota.sotaConfig, "", "assets/graphics/nameplate.png", false, "https://www.phillipian.net/");
 
 // GENERAL
 window.onload = () => {
@@ -854,7 +868,7 @@ window.onload = () => {
         subtitle: "Do you think day students are able to integrate enough with boarding students at Andover this year?"
     });
 
-    //sex 
+    //sex
     sota.stackedBarChart({
         section: "sex",
         dataFile: "assets/data/sex/sexXclass",
@@ -927,7 +941,7 @@ window.onload = () => {
         subtitle: "Rape culture: \“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse\” (Oxford Dictionaries)"
     });
 
-    
+
     sota.stackedBarChart({
         section: "sex",
         dataFile: "assets/data/sex/verbalconsent",
@@ -1144,7 +1158,7 @@ window.onload = () => {
 
 
 
-    //wellness 
+    //wellness
     sota.columnChart({
         section:"wellness",
         dataFile: "assets/data/wellness/sleep",
@@ -1271,7 +1285,7 @@ window.onload = () => {
         title: "Have you ever been bullied or hazed while at Andover?"
     });
 
-    
+
 
     sota.pieChart({
         section:"wellness",
@@ -1334,7 +1348,7 @@ window.onload = () => {
         title: "Quiet Spaces",
         subtitle: "Do you have access to quiet spaces for academic purposes?"
     });
-    
+
     sota.pieChart({
         section:"covid19",
         dataFile: "assets/data/covid19/precautionary_measures",
@@ -1429,7 +1443,7 @@ window.onload = () => {
         title: "nonessential travel",
         subtitle: "Have you gone on vacation or engaged in nonessential travel since March 11, 2020?"
     });
-       
+
     // sota.pieChart({
     //     section:"covid19",
     //     dataFile: "assets/data/covid19/wifi",
@@ -1437,7 +1451,7 @@ window.onload = () => {
     //     subtitle: "72 skipped",
     //     title: "Do you have access to WiFI/Internet where you are staying?"
     // });
-    
+
     sota.pieChart({
         section:"covid19",
         dataFile: "assets/data/covid19/own_device",
@@ -1468,7 +1482,7 @@ window.onload = () => {
         displayPercentage: true,
         subtitle: "71 skipped",
         title: "Have you been vaccinated for Covid-19?"
-    });    
+    });
     sota.pieChart({
         section:"covid19",
         dataFile: "assets/data/covid19/place_of_stay",
