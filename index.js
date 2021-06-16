@@ -1658,13 +1658,14 @@ window.onload = () => {
         title: " Generally speaking, do you consider yourself happy at Andover?"
     });
 
+    //this doesnt seem like something that should be a stackedbarchart because respondents could have picked multiple responses
     sota.stackedBarChart({
         section: "senior",
         dataFile: "assets/data/senior/sexual_activity",
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "sexual activity"
+        title: "sexual activity NEED FIX SEE COMMENT IN CODE"
     });
 
     sota.stackedColumnChart({
@@ -1683,6 +1684,44 @@ window.onload = () => {
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         title: "Have you ever consumed marijuana?"
+    });
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/rape_culture",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Do you believe there is rape culture—“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)—at Andover?"
+    });
+   
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/sexual_orientation",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "sexuality over the years",
+        subtitle: "What is your sexual orientation?"
+    });
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/feminist",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Do you consider yourself a feminist?"
+    });
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/relationships",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Committed relationships",
+        subtitle: "Have you ever been in a committed relationship?"
     });
 
 
