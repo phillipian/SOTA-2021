@@ -950,30 +950,26 @@ window.onload = () => {
     });
 
     //sex
-    sota.pieChart({
-        section:"sex",
-        dataFile: "assets/data/sex/sexed",
-        displayPercentage: true,
-            title: "Do you think that your sexual education at Andover has been/is adequate? NEED FIX"
-        });
-    sota.stackedBarChart({
+    
+    sota.groupedBarChart({
         section: "sex",
         dataFile: "assets/data/sex/sexXclass",
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Sexual Activity by grade",
-        subtitle: "Have you ever engaged in sexual activity?"
-    });
-
-    sota.barChart({
-        section:"sex",
-        dataFile: "assets/data/sex/sexual_activity",
-        displayPercentage: true,
-        groupLabelStyle: "onBar",
-        totalResp: 949,
+        title: "Sexual Activity by class year",
+        totalResp: {2024: 227, 2023: 232, 2022: 240, 2021: 246},
         subtitle: "What form(s) of sexual activity have you engaged in?"
     });
+
+    // sota.barChart({
+    //     section:"sex",
+    //     dataFile: "assets/data/sex/sexual_activity",
+    //     displayPercentage: true,
+    //     groupLabelStyle: "onBar",
+    //     totalResp: 949,
+    //     subtitle: "What form(s) of sexual activity have you engaged in?"
+    // });
 
 
     sota.barChart({
@@ -1000,9 +996,16 @@ window.onload = () => {
 
     sota.pieChart({
         section:"sex",
+        dataFile: "assets/data/sex/sexed",
+        displayPercentage: true,
+            title: "Do you think that your sexual education at Andover has been/is adequate? NEED FIX"
+        });
+    sota.pieChart({
+        section:"sex",
         dataFile: "assets/data/sex/hookup_culture",
         displayPercentage: true,
-        title: "Do you believe that there is a hookup culture at Andover?"
+        title: "hook-up culture",
+        subtitle: "Do you believe that there is a hook-up culture at Andover?"
     });
 
     sota.bigNumber({
@@ -1015,7 +1018,7 @@ window.onload = () => {
         section:"sex",
         dataFile: "assets/data/sex/participate_hookup",
         displayPercentage: true,
-        title: "If yes, have you ever felt pressured by your peers to participate in Andover's hook-up culture?"
+        title: "NEED TO REMOVE OR NOT?? If yes, have you ever felt pressured by your peers to participate in Andover's hook-up culture?"
     });
 
     sota.pieChart({
@@ -1050,7 +1053,8 @@ window.onload = () => {
         dataFile: "assets/data/sex/verbalconsent",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Do you consistently ask your partner for verbal consent?"
+        title:"consent",
+        subtitle: "Do you consistently ask your partner for verbal consent?"
     });
 
 
@@ -1069,7 +1073,8 @@ window.onload = () => {
         dataFile: "assets/data/sex/inter-class_relationship",
         showLegend: true,
         labelStyle: "onBar",
-        title: "If you are currently in a committed relationship, what class is your partner in?"
+        title: "inter-class relationships",
+        subtitle: "If you are currently in a committed relationship, what class is your partner in?"
     });
 
     sota.stackedBarChart({
@@ -1078,7 +1083,7 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "masturbation NEED FIX",
+        title: "masturbation !!NEED FIX",
         subtitle: "How frequently do you masturbate?"
     });
 
@@ -1095,7 +1100,8 @@ window.onload = () => {
         section:"sex",
         dataFile: "assets/data/sex/porn",
         displayPercentage: true,
-        title: "If you watch pornography/read pornographic materials, how frequently, on average, do you do so?"
+        title: "Porn",
+        subtitle: "If you watch pornography/read pornographic materials, how frequently, on average, do you do so?"
     });
 
     sota.columnChart({
@@ -1105,15 +1111,6 @@ window.onload = () => {
         totalResp: 949,
         title: "Have you ever been sexually harassed?"
     });
-
-    sota.columnChart({
-        section:"sex",
-        dataFile: "assets/data/sex/fetishization",
-        displayPercentage: true,
-        totalResp: 949,
-        title: "Have you ever been sexualized (including being fetishized and hypersexualized) or desexualized (including being defeminized and emasculated) due to your racial-ethnic identity?"
-    });
-
 
     sota.columnChart({
         section:"sex",
@@ -1127,7 +1124,7 @@ window.onload = () => {
         section:"sex",
         dataFile: "assets/data/sex/sexted",
         displayPercentage: true,
-        title: "Have you ever sent a sexually explicit photo of yourself?"
+        title: "NEED TO KEEP ?!!!Have you ever sent a sexually explicit photo of yourself?"
     });
 
     sota.bigNumber({
@@ -1144,6 +1141,15 @@ window.onload = () => {
         title: "Have you ever received a sexually explicit photo?"
     });
 
+    sota.stackedBarChart({
+        section: "sex",
+        dataFile: "assets/data/sex/sexual_racism",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Sexual racism",
+        subtitle: "Have you ever been sexualized (including being fetishized and hypersexualized) or desexualized (including being defeminized and emasculated) due to your racial-ethnic identity?"
+    });
 
 
 

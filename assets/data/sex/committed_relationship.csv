@@ -1,6 +1,6 @@
-group,"Yes, currently","Yes, not currently","No"
-All respondents,247,140,528
-2024,52,17,148
-2023,56,32,132
-2022,73,36,127
-2021,64,54,121
+group,"Yes, currently","Yes, but not currently","No"
+All respondents,140,247,528
+2024,17,52,148
+2023,32,56,132
+2022,36,73,127
+2021,54,64,121
