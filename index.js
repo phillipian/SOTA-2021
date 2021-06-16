@@ -27,6 +27,7 @@ sota.sotaConfig.sections = [
     {"slug": "community", "name": "Community Diversity", "colors": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"],
       "blurb": "In regards to what causes social divide between students at Andover, 49.6% of respondents believed it to be sexual orientation, 65.6% of respondents believed it to be political belief, 60.5% of respondents believed it to be socioeconomic status, and 61.6% of respondents believed it to be race (respondents may overlap). 95.2% of respondents from the Class of 2021 believe that social divides exist at Andover, while 81.0% of respondents from the Class of 2024 believe the same. 32.0% of respondents who identify as white believe that the faculty is lacking in racial diversity, while 68.9% of Black-identifying respondents, 66.7% of Indigenous-identifying respondents, 41.7% of Asian-identifying respondents, and 33.3% of Native Hawaiian and Pacific Islander-identifying respondents say the same. "
     },
+    {"slug": "senior", "name": "Senior Sota", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"]},
 ]
 
 sota.setColors(sota.sotaConfig);
@@ -1051,7 +1052,7 @@ window.onload = () => {
         dataFile: "assets/data/sex/inter-class_relationship",
         showLegend: true,
         labelStyle: "onBar",
-        title: "If you are currently in a committed relationship, what class is your partner in? NEED FIX"
+        title: "If you are currently in a committed relationship, what class is your partner in?"
     });
 
     sota.pieChart({
@@ -1635,6 +1636,55 @@ window.onload = () => {
         subtitle: "74 skipped",
         title: "Where did you stay for the majority of your remote learning experience?"
     });
+
+
+    //senior 
+
+    sota.stackedBarChart({
+        section: "senior",
+        dataFile: "assets/data/senior/college",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Andover and college",
+        subtitle: "Do you think attending Andover affects your chances of attending a selective college?"
+    });
+    sota.stackedBarChart({
+        section: "senior",
+        dataFile: "assets/data/senior/happiness",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: " Generally speaking, do you consider yourself happy at Andover?"
+    });
+
+    sota.stackedBarChart({
+        section: "senior",
+        dataFile: "assets/data/senior/sexual_activity",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "sexual activity"
+    });
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/alcohol",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Have you ever consumed alcohol?"
+    });
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/marijuana",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Have you ever consumed marijuana?"
+    });
+
 
     sota.sotaMasonry();
 }
