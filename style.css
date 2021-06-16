@@ -1,3 +1,7 @@
+html {
+  zoom: 90%;
+}
+
 body{
     overflow-x: hidden;
 }
