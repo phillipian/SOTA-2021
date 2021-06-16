@@ -994,6 +994,14 @@ window.onload = () => {
         title: "How many people have you engaged in sexual activity with?"
     });
 
+    sota.barChart({
+        section:"sex",
+        dataFile: "assets/data/sex/sti",
+        displayPercentage: true,
+        title: "Sexual health",
+        subtitle: "Have you ever contracted a Sexually Transmitted Infection (STI) or Sexually Transmitted Disease (STD)?"
+    });
+
     sota.pieChart({
         section:"sex",
         dataFile: "assets/data/sex/sexed",
@@ -1154,48 +1162,83 @@ window.onload = () => {
 
 
     //drugs
-    sota.pieChart({
+    sota.stackedBarChart({
         section:"drugs",
-        dataFile: "assets/data/drugs/alcohol",
+        dataFile: "assets/data/drugs/alcoholXclass",
         displayPercentage: true,
-        title: "Have you ever consumed alcohol recreationally?"
+        groupLabelStyle: "onBar",
+        title: "Drugs and alcohol consumption by the numbers",
+        subtitle: "Have you ever consumed alcohol recreationally?"
     });
 
-    sota.pieChart({
+    sota.stackedBarChart({
         section:"drugs",
-        dataFile: "assets/data/drugs/tobacco",
+        dataFile: "assets/data/drugs/marijuanaXclass",
         displayPercentage: true,
-        title: "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?"
+        groupLabelStyle: "onBar",
+        subtitle: "Have you ever used marijuana?"
     });
 
-    sota.pieChart({
-        section:"drugs",
-        dataFile: "assets/data/drugs/juul",
-        displayPercentage: true,
-        title: "Have you ever \"juuled\" or used a similar e-cigarette/pod vape nicotine-based product?"
-    });
+    // sota.stackedBarChart({
+    //     section:"drugs",
+    //     dataFile: "assets/data/drugs/juulXclass",
+    //     displayPercentage: true,
+    //     groupLabelStyle: "onBar",
+    //     subtitle: "Have you ever used marijuana?"
+    // });
 
-    sota.pieChart({
-        section:"drugs",
-        dataFile: "assets/data/drugs/marijuana",
-        displayPercentage: true,
-        title: "Have you ever used marijuana?"
-    });
+
+    // sota.pieChart({
+    //     section:"drugs",
+    //     dataFile: "assets/data/drugs/tobacco",
+    //     displayPercentage: true,
+    //     title: "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?"
+    // });
+
+    // sota.pieChart({
+    //     section:"drugs",
+    //     dataFile: "assets/data/drugs/juul",
+    //     displayPercentage: true,
+    //     title: "Have you ever \"juuled\" or used a similar e-cigarette/pod vape nicotine-based product?"
+    // });
+
+    // sota.pieChart({
+    //     section:"drugs",
+    //     dataFile: "assets/data/drugs/marijuana",
+    //     displayPercentage: true,
+    //     title: "Have you ever used marijuana?"
+    // });
 
     sota.barChart({
         section:"drugs",
         dataFile: "assets/data/drugs/drug_frequency",
         displayPercentage: true,
         totalResp: 949,
-        title: "How often do you consume recreational drugs or alcohol on campus?"
+        title: "Drug habits",
+        subtitle: "How often do you consume recreational drugs or alcohol on campus?"
     });
 
-    sota.pieChart({
-        section:"drugs",
-        dataFile: "assets/data/drugs/normalized",
-        displayPercentage: true,
-        title: "Do you think that the use of recreational drugs or alcohol is normalized at Andover?"
+    sota.stackedBarChart({
+        section: "drugs",
+        dataFile: "assets/data/drugs/drugs_covid",
+        showLegend: true,
+        title: "consumption and covid-19",
+        subtitle: "How has the Covid-19 pandemic impacted the frequency in which you consume recreational drugs or alcohol?"
     });
+
+    sota.bigNumber({
+        section: "drugs",
+        number:"70.7%",
+        title:"normalization of drugs and alcohol",
+        subtitle:"of respondents believe that the use of recreational drugs or alcohol is normalized at Andover."
+    })
+
+    // sota.pieChart({
+    //     section:"drugs",
+    //     dataFile: "assets/data/drugs/normalized",
+    //     displayPercentage: true,
+    //     title: "Do you think that the use of recreational drugs or alcohol is normalized at Andover?"
+    // });
 
     sota.pieChart({
         section:"drugs",
@@ -1208,14 +1251,23 @@ window.onload = () => {
         section:"drugs",
         dataFile: "assets/data/drugs/dorm_drug",
         displayPercentage: true,
-        title: "Do you think your dorm significantly influences how you think about/use drugs and alcohol?"
+        title: "dorm culture",
+        subtitle: "Do you think your dorm significantly influences how you think about/use drugs and alcohol?"
     });
+
+    sota.bigNumber({
+        section: "drugs",
+        number:"33.1%",
+        title:"Drugs vs. student leadership",
+        subtitle:"of student leaders have consumed drugs or alchohol in their dorms."
+    })
 
     sota.pieChart({
         section:"drugs",
         dataFile: "assets/data/drugs/study_drugs",
         displayPercentage: true,
-        title: "Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during your time at Andover?"
+        title:"study drugs",
+        subtitle: "Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during your time at Andover?"
     });
 
     sota.barChart({
@@ -1223,7 +1275,8 @@ window.onload = () => {
         dataFile: "assets/data/drugs/hard_drugs",
         displayPercentage: true,
         totalResp: 949,
-        title: "Have you ever used hallucinogens or hard drugs?"
+        title: "Hallucinogens & hard drugs",
+        subtitle: "Have you ever used hallucinogens or hard drugs?"
     });
 
     sota.stackedBarChart({
@@ -1231,14 +1284,16 @@ window.onload = () => {
         dataFile: "assets/data/drugs/drugs_for_stress",
         showLegend: true,
         labelStyle: "onBar",
-        title: "If you consume recreational drugs or alcohol on campus, do you do so primarily to relieve stress?"
+        title: "stress relief",
+        subtitle: "If you consume recreational drugs or alcohol on campus, do you do so primarily to relieve stress?"
     });
     sota.stackedBarChart({
         section: "drugs",
         dataFile: "assets/data/drugs/peer_pressure",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Have you ever felt pressured by peers to consume recreational drugs or alcohol on campus?"
+        title: "peer pressure",
+        subtitle: "Have you ever felt pressured by peers to consume recreational drugs or alcohol on campus?"
     });
     sota.pieChart({
         section:"drugs",
@@ -1252,7 +1307,8 @@ window.onload = () => {
         dataFile: "assets/data/drugs/location",
         displayPercentage: true,
         totalResp: 949,
-        title: "In which of the following settings at Andover have you been under the influence of recreational drugs or alcohol?"
+        title: "location",
+        subtitle: "In which of the following settings at Andover have you been under the influence of recreational drugs or alcohol?"
     });
 
     sota.pieChart({
