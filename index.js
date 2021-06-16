@@ -1,6 +1,6 @@
 sota.sotaConfig.sections = [
     {"slug": "general", "name": "General", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"]},
-    {"slug": "politics", "name": "Politics", "colors": ["#2C3278", "#5D5797", "#7D78AD", "#948EB9", "#A8A3C6", "#BFBDD5", "#DFDBE7"],
+    {"slug": "politics", "name": "Politics", "colors": ["#2C3278", "#5D5797", "#7D78AD", "#948EB9", "#A8A3C6", "#BFBDD5", "#ACA0C0", "#DFDBE7"],
       "blurb": "After the increased media coverage of social and systemic injustices this past year, 40.7% of respondents’ political views shifted to the left, while 11.8% respondents reported that their views shifted to the right, and 47.6% believe their ideologies remained the same. However, support for the Black Lives Matter Movement did not drastically change from the previous year. From the 89.9% of respondents who supported the movement in the 2020 State of the Academy, 90.4% of respondents support the movement in 2021––after the racial justice protests of the spring and summer of 2020 sparked by George Floyd’s murder and nationwide police brutality. While 33.3% of respondents believe that white people can experience racism, that number is 44.9% among Juniors and 23.3% among Seniors. An overwhelming majority of respondents believe that corporations and the government are responsible for addressing climate change—92.2% and 92.5% respectively—while 75.9% of respondents believe that individual people are responsible, and 1.5% say that humans are not responsible at all. "
     },
     {"slug": "campus", "name": "Campus Culture", "colors": ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
@@ -12,7 +12,7 @@ sota.sotaConfig.sections = [
     {"slug": "discipline", "name": "Discipline", "colors": ["#B53432", "#C74F50", "#D47173","#E4A8A6", "#F0D1CA"],
       "blurb": "When an Andover student has committed a major offense, they are called upon a Disciplinary Committee (D.C.), however only 9.0% of respondents fully understand how the process works. 3.0% of respondents have sat before a D.C., and 77.9% of respondents believe that the D.C. system favors students with privileged backgrounds. When correlated with income, 75.5% of students whose net family income is $500,000 or above believe that the D.C. system favors privilege as opposed to 97.1% of students whose net family income is $34,999 or below. 42.9% of respondents have committed a major offense without being caught, and 52.1% of respondents reported committing academic dishonesty more frequently than they did prior to the pandemic. "
     },
-    {"slug": "sex", "name": "Sex", "colors": ["#D5127D", "#DF5694", "#E680A9", "#ECA8C1", "#F8D3DD", "#fbe7ec"],
+    {"slug": "sex", "name": "Sex", "colors": ["#D5127D", "#DF5694", "#E680A9", "#ECA8C1", "#F5BAD1", "#F8D3DD", "#fbe7ec"],
       "blurb": "At Andover, 84.3% of Juniors, 73.1% of Lowers, 60.8% of Uppers, and 40.2% of Seniors have never engaged in sexual activity—defined as digital, oral, vaginal, or anal sex. 80.2% of respondents believe that there is a hook-up culture at Andover, but 23.8% of respondents have felt pressured to participate in it. 78.1% of men feel comfortable telling friends that they masturbate, while only 38.1% of women feel the same way. 41.1% of respondents believe that a rape culture exists at Andover. 25.2% of respondents reported having been sexualized or desexualized due to their racial-ethnic identity, with 15.8% of respondents experiencing sexual racism on-campus. "
     },
     {"slug": "drugs", "name": "Drugs & Alcohol", "colors": ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
@@ -21,7 +21,7 @@ sota.sotaConfig.sections = [
     {"slug": "wellness", "name": "Wellness", "colors": ["#69B645", "#98C970", "#B1D281", "#CEDFA6", "#E3EFCE"],
       "blurb": "Only 26.4% of respondents reported having sufficient time to adequately take care of themselves in their day-to-day life as an Andover student, with another 54.0% saying they had somewhat enough time. On average, Andover students sleep under seven hours per night. 67.4% of respondents report skipping meals to catch up on sleep or homework. Moreover, 27.5% of respondents said that due to dietary restrictions, they were prevented from eating a main course meal from Paresky Commons at least once per month. While 83.4% of respondents consider themselves happy at Andover, just 68.9% of respondents think that Andover students are happy. A majority of respondents (51.3%) believe that the mental health and counseling resources provided by the Sykes Wellness Center are not sufficient. 79.8% of respondents have felt insecure about their intelligence, and 82.4% of respondents have felt insecure about their physical appearance. When correlated with gender identity, 69.4% of men feel insecure about their physical appearance as opposed to 92.9% of women. "
     },
-    {"slug": "covid19", "name": "COVID-19", "colors": ["#088446", "#32A068", "#7CC193", "#B2DAB8", "#E2F1E1"],
+    {"slug": "covid19", "name": "COVID-19", "colors": ["#088446", "#32A068", "#7CC193", "#B2DAB8", "#80C582", "#A1CFAB", "#E2F1E1"],
       "blurb" : "The Covid-19 pandemic has caused widespread closures across the world, pushing Andover’s spring term online. 89.2% of SOTA respondents returned home for the spring term, and 97.8% are staying with family. As of the closure of the SOTA survey, 49.0% of respondents personally know someone who has tested positive for Covid-19. 89.1% of respondents believe that Andover has had enough of a reaction to the pandemic, while 50.6% of respondents have found their remote learning experience adequately educational."
     },
     {"slug": "community", "name": "Community Diversity", "colors": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"],
@@ -565,7 +565,7 @@ window.onload = () => {
         labelStyle: "onBar",
         title: "Do you think that Andover prioritizes athletics? X Varsity athlete"
         });
-    
+
     sota.stackedBarChart({
         section: "campus",
         dataFile: "assets/data/campus/antiracismXrace",
@@ -742,7 +742,7 @@ window.onload = () => {
         section: "discipline",
         dataFile: "assets/data/discipline/CCCDC",
         sorted: false,
-        title: "Have you ever sat before a ccc or a dc",
+        title: "Have you ever sat before a ccc or a dc?",
     });
 
     sota.columnChart({
