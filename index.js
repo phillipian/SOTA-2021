@@ -950,13 +950,19 @@ window.onload = () => {
     });
 
     //sex
+    sota.pieChart({
+        section:"sex",
+        dataFile: "assets/data/sex/sexed",
+        displayPercentage: true,
+            title: "Do you think that your sexual education at Andover has been/is adequate? NEED FIX"
+        });
     sota.stackedBarChart({
         section: "sex",
         dataFile: "assets/data/sex/sexXclass",
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Sexual Activity by class year",
+        title: "Sexual Activity by grade",
         subtitle: "Have you ever engaged in sexual activity?"
     });
 
@@ -966,7 +972,15 @@ window.onload = () => {
         displayPercentage: true,
         groupLabelStyle: "onBar",
         totalResp: 949,
-        title: "What form(s) of sexual activity have you engaged in?"
+        subtitle: "What form(s) of sexual activity have you engaged in?"
+    });
+
+
+    sota.barChart({
+        section:"sex",
+        dataFile: "assets/data/sex/use_protection",
+        displayPercentage: true,
+        title: "Do you use protection while engaging in sexual activity?"
     });
 
     sota.stackedBarChart({
@@ -974,7 +988,7 @@ window.onload = () => {
         dataFile: "assets/data/sex/sex_frequency",
         showLegend: true,
         labelStyle: "onBar",
-        title: "How frequently, on average, do you engage in sexual activity?"
+        title: "How frequently do you engage in sexual activity?"
     });
 
     sota.barChart({
@@ -991,6 +1005,12 @@ window.onload = () => {
         title: "Do you believe that there is a hookup culture at Andover?"
     });
 
+    sota.bigNumber({
+        section:"sex",
+        number: "29.3%",
+        title: "Peer pressure & hook-up culture",
+        subtitle: "of respondents that believe Andover has a hook-up culture have felt pressured by peers to participate in it."
+    })
     sota.pieChart({
         section:"sex",
         dataFile: "assets/data/sex/participate_hookup",
@@ -1002,14 +1022,16 @@ window.onload = () => {
         section:"sex",
         dataFile: "assets/data/sex/ever_hookedup",
         displayPercentage: true,
-        title: "Have you ever “hooked up” with someone you were not in a committed relationship with?"
+        title: " \"Hooking-up\"",
+        subtitle: "Have you ever “hooked up” with someone you were not in a committed relationship with?"
     });
 
     sota.pieChart({
         section:"sex",
         dataFile: "assets/data/sex/partner_pressure",
         displayPercentage: true,
-        title: "Have you ever felt pressured by a partner to engage in sexual activity?"
+        title: "partner pressure",
+        subtitle: "Have you ever felt pressured by a partner to engage in sexual activity?"
     });
 
 
@@ -1031,12 +1053,7 @@ window.onload = () => {
         title: "Do you consistently ask your partner for verbal consent?"
     });
 
-    sota.barChart({
-        section:"sex",
-        dataFile: "assets/data/sex/use_protection",
-        displayPercentage: true,
-        title: "Do you use protection while engaging in sexual activity?"
-    });
+
 
     sota.stackedBarChart({
         section: "sex",
@@ -1055,19 +1072,14 @@ window.onload = () => {
         title: "If you are currently in a committed relationship, what class is your partner in?"
     });
 
-    sota.pieChart({
-        section:"sex",
-        dataFile: "assets/data/sex/sexed",
-        displayPercentage: true,
-        title: "Do you think that your sexual education at Andover has been/is adequate?"
-    });
-
     sota.stackedBarChart({
         section: "sex",
         dataFile: "assets/data/sex/masturbation",
         showLegend: true,
         labelStyle: "onBar",
-        title: "If you masturbate, how frequently, on average, do you do so?"
+        groupLabelStyle: "onBar",
+        title: "masturbation NEED FIX",
+        subtitle: "How frequently do you masturbate?"
     });
 
     sota.stackedBarChart({
@@ -1076,7 +1088,7 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Would you feel comfortable telling your friends that you masturbate? NEED FIX"
+        title: "Would you feel comfortable telling your friends that you masturbate?"
     });
 
     sota.barChart({
@@ -1118,12 +1130,20 @@ window.onload = () => {
         title: "Have you ever sent a sexually explicit photo of yourself?"
     });
 
+    sota.bigNumber({
+        section:"sex",
+        number: "24.9%",
+        title:"sexting",
+        subtitle: "of respondents have sent a sexually explicit photo of themselves."
+    })
+
     sota.pieChart({
         section:"sex",
         dataFile: "assets/data/sex/receive_sext",
         displayPercentage: true,
         title: "Have you ever received a sexually explicit photo?"
     });
+
 
 
 
