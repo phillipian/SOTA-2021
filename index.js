@@ -201,12 +201,12 @@ window.onload = () => {
     }) //better if 2 pie charts
 
     sota.pieChart({
-      section: "general",
-      dataFile: "assets/data/general/varsity",
-      sorted: false,
-      title: "Varsity Athletics",
-      subtitle: "Are you a varsity athlete?"
-    });
+        section: "general",
+        dataFile: "assets/data/general/varsity",
+        sorted: false,
+        title: "Varsity Athletics",
+        subtitle: "Are you a varsity athlete?"
+      });
 
     sota.barChart({
     section: "general",
@@ -417,11 +417,6 @@ window.onload = () => {
     });
 
 //Campus Culture
-    sota.pieChart({
-        section: "campus",
-        dataFile: "assets/data/campus/varsityathlete",
-        title: "Are you a varsity athlete?"
-    });
 
     sota.stackedBarChart({
         section: "campus",
@@ -1047,7 +1042,8 @@ window.onload = () => {
         dataFile: "assets/data/sex/committed_relationship",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Have you ever been in a committed relationship? NEED FIX"
+        groupLabelStyle: "onBar",
+        title: "Have you ever been in a committed relationship?"
     });
 
     sota.stackedColumnChart({
@@ -1625,13 +1621,13 @@ window.onload = () => {
         title: "Have you tested positive for Covid-19?"
     });
 
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/vaccinated",
-        displayPercentage: true,
-        subtitle: "71 skipped",
-        title: "Have you been vaccinated for Covid-19?"
-    });
+    // sota.pieChart({
+    //     section:"covid19",
+    //     dataFile: "assets/data/covid19/vaccinated",
+    //     displayPercentage: true,
+    //     subtitle: "71 skipped",
+    //     title: "Have you been vaccinated for Covid-19?"
+    // });
     sota.pieChart({
         section:"covid19",
         dataFile: "assets/data/covid19/place_of_stay",
