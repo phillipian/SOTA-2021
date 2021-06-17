@@ -544,14 +544,14 @@ window.onload = () => {
     title: "Do you think the school promotes ideological diversity in its selection of speakers? X Political affiliation"
     });
 
-    sota.stackedBarChart({
-        section: "campus",
-        dataFile: "assets/data/campus/antiracismXclass",
-        showLegend: true,
-        groupLabelStyle: "onBar",
-        labelStyle: "onBar",
-        title: "Do you feel the creation of the Anti-Racism Task Force was a productive choice in making Andover a more racially equitable, inclusive, and just community? x class "
-        });
+    // sota.stackedBarChart({
+    //     section: "campus",
+    //     dataFile: "assets/data/campus/antiracismXclass",
+    //     showLegend: true,
+    //     groupLabelStyle: "onBar",
+    //     labelStyle: "onBar",
+    //     title: "Do you feel the creation of the Anti-Racism Task Force was a productive choice in making Andover a more racially equitable, inclusive, and just community? x class "
+    //     });
 
     sota.stackedBarChart({
         section: "campus",
@@ -1180,35 +1180,23 @@ window.onload = () => {
         subtitle: "Have you ever used marijuana?"
     });
 
-    // sota.stackedBarChart({
-    //     section:"drugs",
-    //     dataFile: "assets/data/drugs/juulXclass",
-    //     displayPercentage: true,
-    //     groupLabelStyle: "onBar",
-    //     subtitle: "Have you ever used marijuana?"
-    // });
+    sota.stackedBarChart({
+        section:"drugs",
+        dataFile: "assets/data/drugs/tobaccoXclass",
+        displayPercentage: true,
+        groupLabelStyle: "onBar",
+        subtitle: "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?"
+    });
+
+    sota.stackedBarChart({
+        section:"drugs",
+        dataFile: "assets/data/drugs/juulXclass",
+        displayPercentage: true,
+        groupLabelStyle: "onBar",
+        subtitle: "Have you ever \"juuled\" or used a similar e-cigarette/pod vape nicotine-based product?"
+    });
 
 
-    // sota.pieChart({
-    //     section:"drugs",
-    //     dataFile: "assets/data/drugs/tobacco",
-    //     displayPercentage: true,
-    //     title: "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?"
-    // });
-
-    // sota.pieChart({
-    //     section:"drugs",
-    //     dataFile: "assets/data/drugs/juul",
-    //     displayPercentage: true,
-    //     title: "Have you ever \"juuled\" or used a similar e-cigarette/pod vape nicotine-based product?"
-    // });
-
-    // sota.pieChart({
-    //     section:"drugs",
-    //     dataFile: "assets/data/drugs/marijuana",
-    //     displayPercentage: true,
-    //     title: "Have you ever used marijuana?"
-    // });
 
     sota.barChart({
         section:"drugs",
@@ -1225,6 +1213,15 @@ window.onload = () => {
         showLegend: true,
         title: "consumption and covid-19",
         subtitle: "How has the Covid-19 pandemic impacted the frequency in which you consume recreational drugs or alcohol?"
+    });
+
+    sota.stackedBarChart({
+        section:"drugs",
+        dataFile: "assets/data/drugs/vapeXincome",
+        displayPercentage: true,
+        groupLabelStyle: "onBar",
+        title: "Vape use vs. income ",
+        subtitle: "Have you ever \"juuled\" or used a similar e-cigarette/pod vape nicotine-based product?"
     });
 
     sota.bigNumber({
@@ -1245,6 +1242,7 @@ window.onload = () => {
         section:"drugs",
         dataFile: "assets/data/drugs/influence_friends",
         displayPercentage: true,
+        title: "drugs and friendships",
         title: "Do you think that recreational drug or alcohol use significantly influences your friendships at Andover?"
     });
 
@@ -1300,7 +1298,8 @@ window.onload = () => {
         section:"drugs",
         dataFile: "assets/data/drugs/sold_drugs",
         displayPercentage: true,
-        title: "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?"
+        title: "sales",
+        subtitle: "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?"
     });
 
     sota.barChart({
