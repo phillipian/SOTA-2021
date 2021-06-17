@@ -1023,12 +1023,12 @@ window.onload = () => {
         title: "Peer pressure & hook-up culture",
         subtitle: "of respondents that believe Andover has a hook-up culture have felt pressured by peers to participate in it."
     })
-    sota.pieChart({
-        section:"sex",
-        dataFile: "assets/data/sex/participate_hookup",
-        displayPercentage: true,
-        title: "NEED TO REMOVE OR NOT?? If yes, have you ever felt pressured by your peers to participate in Andover's hook-up culture?"
-    });
+    // sota.pieChart({
+    //     section:"sex",
+    //     dataFile: "assets/data/sex/participate_hookup",
+    //     displayPercentage: true,
+    //     title: "NEED TO REMOVE OR NOT?? If yes, have you ever felt pressured by your peers to participate in Andover's hook-up culture?"
+    // });
 
     sota.pieChart({
         section:"sex",
@@ -1129,12 +1129,12 @@ window.onload = () => {
         title: "Have you ever been sexually assaulted?"
     });
 
-    sota.pieChart({
-        section:"sex",
-        dataFile: "assets/data/sex/sexted",
-        displayPercentage: true,
-        title: "NEED TO KEEP ?!!!Have you ever sent a sexually explicit photo of yourself?"
-    });
+    // sota.pieChart({
+    //     section:"sex",
+    //     dataFile: "assets/data/sex/sexted",
+    //     displayPercentage: true,
+    //     title: "NEED TO KEEP ?!!!Have you ever sent a sexually explicit photo of yourself?"
+    // });
 
     sota.bigNumber({
         section:"sex",
@@ -1327,8 +1327,8 @@ window.onload = () => {
         section:"wellness",
         dataFile: "assets/data/wellness/sleep",
         displayPercentage: true,
-        title: "On average, how many hours of sleep do you get per night?",
-        subtitle: "Editor's note: 22 people skipped"
+        subtitle: "On average, how many hours of sleep do you get per night?",
+        title: "sleep"
     });
 
     sota.bigNumber({
@@ -1337,11 +1337,33 @@ window.onload = () => {
         subtitle:"Average hours of sleep per night of an Andover student"
     })
 
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/diagnosed",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "mental health",
+        subtitle: "Have you ever been diagnosed with.."
+    });
+
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/eating_disorder",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "eating disorders",
+        subtitle: "Have you ever had, or do you currently have, an eating disorder?"
+    });
+
+
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/insecure",
         sorted: false,
-        title: "Do you feel insecure about your body, physical health, and/or appearance?"
+        title: "insecurity",
+        subtitle: "Do you feel insecure about your body, physical health, and/or appearance?"
     });
 
     sota.stackedBarChart({
@@ -1350,7 +1372,8 @@ window.onload = () => {
         showLegend: true,
         groupLabelStyle: "onBar",
         labelStyle: "onBar",
-        title: "body insecurity x gender"
+        title: "body insecurity by gender identity",
+        subtitle: "Do you feel insecure about your body, physical health, and/or appearance?"
     });
 
     sota.stackedBarChart({
@@ -1359,14 +1382,15 @@ window.onload = () => {
         showLegend: true,
         groupLabelStyle: "onBar",
         labelStyle: "onBar",
-        title: "body insecurity x varsity athletics"
+        title: "body insecurity in athletes",
+        subtitle: "Do you feel insecure about your body, physical health, and/or appearance?"
     });
 
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/insecure_brain",
         sorted: false,
-        title: "Do you feel insecure about your academic ability and/or intelligence?"
+        subtitle: "Do you feel insecure about your academic ability and/or intelligence?"
     });
 
     sota.stackedBarChart({
@@ -1374,7 +1398,7 @@ window.onload = () => {
         dataFile: "assets/data/wellness/happiness",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Generally speaking, do you consider yourself happy at Andover?"
+        subtitle: "Generally speaking, do you consider yourself happy at Andover?"
     });
 
     sota.stackedBarChart({
@@ -1382,7 +1406,8 @@ window.onload = () => {
         dataFile: "assets/data/wellness/others_happiness",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Generally speaking, do you think that Andover students are happy?"
+        title:" happiness",
+        subtitle: "Generally speaking, do you think that Andover students are happy?"
     });
 
     sota.barChart({
@@ -1393,13 +1418,36 @@ window.onload = () => {
         title: "What social media platforms do you use at Andover?"
     });
 
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/social_media_impact",
+        showLegend: true,
+        labelStyle: "onBar",
+        title: "social media and mental health",
+        subtitle: "How does social media impact your life?"
+    });
+
+    sota.columnChart({
+        section:"wellness",
+        dataFile: "assets/data/wellness/hours_social_media",
+        sorted: false,
+        title: "Approximately how many hours a day do you spend on social media?",
+    });
+
+    sota.bigNumber({
+        section: "wellness",
+        number:"2.91",
+        subtitle: "hours spent on social media per day on average"
+    })
+
     sota.barChart({
         section:"wellness",
         dataFile: "assets/data/wellness/dietary_restrictions",
         displayPercentage: true,
         totalResp: 949,
-        title: "What are your dietary restrictions?",
-        subtitle: "Editor's note: 26 skipped"
+        subtitle: "What are your dietary restrictions?",
+        title: "Dietary restrictions"
     });
 
     sota.stackedBarChart({
@@ -1408,32 +1456,32 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         showLegend: true,
         labelStyle: "onBar",
-        title: "How often does a dietary restriction prevent you from eating at least one main course meal offered in Commons?"
+        title: "Dietary restrictions & commons food",
+        subtitle: "How often does a dietary restriction prevent you from eating at least one main course meal offered in Commons?"
+    });
+
+    sota.pieChart({
+        section:"wellness",
+        dataFile: "assets/data/wellness/skip_meals",
+        sorted: false,
+        subtitle: "Do you skip meals in order to get more sleep and/or do school work?",
+        title: "skipping meals"
     });
 
 
-    sota.columnChart({
+    sota.pieChart({
         section:"wellness",
-        dataFile: "assets/data/wellness/hours_social_media",
+        dataFile: "assets/data/wellness/see_counselor",
         sorted: false,
-        title: "Approximately how many hours a day do you spend on social media?",
-        subtitle:"Editor's note: 23 skipped"
+        subtitle: "Have you ever been to the Sykes Wellness Center to see a counselor?",
+        title:"Sykes counseling"
     });
 
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/see_counselor",
         sorted: false,
-        title: "Have you ever been to the Sykes Wellness Center to see a counselor?",
-        subtitle:"Editor's note: 25 skipped"
-    });
-
-    sota.pieChart({
-        section:"wellness",
-        dataFile: "assets/data/wellness/see_counselor",
-        sorted: false,
-        title: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
-        subtitle:"Editor's note: 45 skipped"
+        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
     });
 
     sota.stackedBarChart({
@@ -1442,7 +1490,7 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you seen a counselor?"
+        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you seen a counselor?"
     });
 
     sota.stackedBarChart({
@@ -1451,15 +1499,15 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         showLegend: true,
         labelStyle: "onBar",
-        title: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Depression Diagnosis"
+        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you been diagnosed with depression?"
     });
 
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/sykes_physical",
         sorted: false,
-        title: "Do you think that the physical health resources provided by the Sykes Wellness Center are sufficient?",
-        subtitle:"Editor's note: 44 skipped"
+        subtitle: "Do you think that the physical health resources provided by the Sykes Wellness Center are sufficient?",
+        title: "physical health resources"
     });
 
     sota.barChart({
@@ -1467,42 +1515,39 @@ window.onload = () => {
         dataFile: "assets/data/wellness/support_system",
         displayPercentage: true,
         totalResp: 949,
-        title: "What is your mental and/or emotional support system on campus?"
+        title: "support systems",
+        subtitle: "What is your mental and/or emotional support system on campus?"
     });
 
-    sota.pieChart({
+    sota.bigNumber({
+        section: 'wellness',
+        number: " 70.8%",
+        subtitle: "of students feel as though they have an adequate mental and/or emotional support system on campus"
+    })
+
+    // sota.pieChart({
+    //     section:"wellness",
+    //     dataFile: "assets/data/wellness/adequate_support",
+    //     sorted: false,
+    //     title: "Do you feel as though you have an adequate mental and/or emotional support system on campus?",
+    //     subtitle:"Editor's note: 27 skipped"
+    // });
+
+    sota.bigNumber({
         section:"wellness",
-        dataFile: "assets/data/wellness/adequate_support",
-        sorted: false,
-        title: "Do you feel as though you have an adequate mental and/or emotional support system on campus?",
-        subtitle:"Editor's note: 27 skipped"
-    });
-
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/social_media_impact",
-        showLegend: true,
-        labelStyle: "onBar",
-        title: "How does social media impact your life?"
-    });
-
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/bullied",
-        showLegend: true,
-        labelStyle: "onBar",
-        title: "Have you ever been bullied or hazed while at Andover?"
-    });
+        number:"118",
+        subtitle: "students have been bullied or hazed while at Andover",
+        title: " Bullying & hazing"
+    })
+    // sota.stackedBarChart({
+    //     section: "wellness",
+    //     dataFile: "assets/data/wellness/bullied",
+    //     showLegend: true,
+    //     labelStyle: "onBar",
+    //     title: "Have you ever been bullied or hazed while at Andover?"
+    // });
 
 
-
-    sota.pieChart({
-        section:"wellness",
-        dataFile: "assets/data/wellness/skip_meals",
-        sorted: false,
-        title: "Do you skip meals in order to get more sleep and/or do school work?",
-        subtitle:"Editor's note: 22 skipped"
-    });
 
 
     sota.pieChart({
@@ -1514,23 +1559,7 @@ window.onload = () => {
     });
 
 
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/eating_disorder",
-        showLegend: true,
-        labelStyle: "onBar",
-        // groupLabelStyle: "onBar",
-        title: "Have you ever had, or do you currently have, an eating disorder?"
-    });
 
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/diagnosed",
-        showLegend: true,
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        title: "Have you ever been diagnosed with.."
-    });
 
 
     sota.stackedBarChart({
@@ -1539,7 +1568,8 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Anxiety x Gender "
+        title: "Anxiety by Gender identity",
+        subtitle: "Have you ever been diagnosed with anxiety?"
     });
 
     sota.stackedBarChart({
@@ -1548,7 +1578,8 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Anxiety x Class "
+        title: "Anxiety by Class year",
+        subtitle: "Have you ever been diagnosed with anxiety?"
     });
 
     //covid-19
@@ -1740,7 +1771,7 @@ window.onload = () => {
         title: " Generally speaking, do you consider yourself happy at Andover?"
     });
 
-    //this doesnt seem like something that should be a stackedbarchart because respondents could have picked multiple responses
+    //please do a grouped bar chart for this (see sexual activity in sota2020 as an example)
     sota.stackedBarChart({
         section: "senior",
         dataFile: "assets/data/senior/sexual_activity",
