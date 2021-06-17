@@ -39,7 +39,7 @@ sota.createSections(sota.sotaConfig);
 
 // optional, render navbar based on sotaConfig.sections
 // make sure you call createSections first!
-sota.sotaNavbar(sota.sotaConfig, "", "assets/graphics/nameplate.png", false, "https://www.phillipian.net/");
+sota.sotaNavbar(sota.sotaConfig, "", "assets/graphics/nameplate.png", false, "#intro");
 
 // GENERAL
 window.onload = () => {
@@ -782,7 +782,7 @@ window.onload = () => {
     sota.stackedColumnChart({
         section: "discipline",
         dataFile: "assets/data/discipline/cheatedXclass",
-        title: "Cheating & Class !NEED FIX!",
+        title: "Cheating & Class",
         subtitle: "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?"
     });
 
@@ -950,17 +950,6 @@ window.onload = () => {
     });
 
     //sex
-    
-    sota.groupedBarChart({
-        section: "sex",
-        dataFile: "assets/data/sex/sexXclass",
-        showLegend: true,
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        title: "Sexual Activity by class year",
-        totalResp: {2024: 227, 2023: 232, 2022: 240, 2021: 246},
-        subtitle: "What form(s) of sexual activity have you engaged in?"
-    });
 
     // sota.barChart({
     //     section:"sex",
@@ -977,6 +966,18 @@ window.onload = () => {
         dataFile: "assets/data/sex/use_protection",
         displayPercentage: true,
         title: "Do you use protection while engaging in sexual activity?"
+    });
+
+
+    sota.groupedBarChart({
+        section: "sex",
+        dataFile: "assets/data/sex/sexXclass",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Sexual Activity by class year",
+        totalResp: {2024: 227, 2023: 232, 2022: 240, 2021: 246},
+        subtitle: "What form(s) of sexual activity have you engaged in?"
     });
 
     sota.stackedBarChart({
@@ -1006,7 +1007,7 @@ window.onload = () => {
         section:"sex",
         dataFile: "assets/data/sex/sexed",
         displayPercentage: true,
-            title: "Do you think that your sexual education at Andover has been/is adequate? NEED FIX"
+            title: "Do you think that your sexual education at Andover has been/is adequate?"
         });
     sota.pieChart({
         section:"sex",
@@ -1087,21 +1088,21 @@ window.onload = () => {
 
     sota.stackedBarChart({
         section: "sex",
-        dataFile: "assets/data/sex/masturbation",
-        showLegend: true,
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        title: "masturbation !!NEED FIX",
-        subtitle: "How frequently do you masturbate?"
-    });
-
-    sota.stackedBarChart({
-        section: "sex",
         dataFile: "assets/data/sex/telling_friends_masturbate",
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         title: "Would you feel comfortable telling your friends that you masturbate?"
+    });
+
+    sota.stackedBarChart({
+        section: "sex",
+        dataFile: "assets/data/sex/masturbation",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "masturbation",
+        subtitle: "How frequently do you masturbate?"
     });
 
     sota.barChart({
@@ -1720,7 +1721,7 @@ window.onload = () => {
     });
 
 
-    //senior 
+    //senior
 
     sota.stackedBarChart({
         section: "senior",
@@ -1776,7 +1777,7 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         title: "Do you believe there is rape culture—“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)—at Andover?"
     });
-   
+
     sota.stackedColumnChart({
         section: "senior",
         dataFile: "assets/data/senior/sexual_orientation",
