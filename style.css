@@ -118,6 +118,10 @@ body{
     .sech-community{
         background-color: #089181;
     }
+
+    .sech-senior{
+        background-color: #235085;
+    }
 }
 
 .sota-navbar .sz-navbar-item a, .sota-navbar .sz-navbar-item span{
@@ -342,6 +346,10 @@ section:before{
 
 .sec-community, .sech-community:hover{
     background-color: #089181;
+}
+
+.sec-senior, .sech-senior:hover{
+    background-color: #235085;
 }
 
 /* blurb styling*/
