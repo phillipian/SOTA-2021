@@ -1660,7 +1660,6 @@ window.onload = () => {
         section: "covid19",
         dataFile: "assets/data/covid19/know_someone_testpositive",
         displayPercentage: true,
-        subtitle: "72 skipped",
         title: "Do you know someone personally who has tested positive for COVID-19?"
     });
 
@@ -1708,7 +1707,6 @@ window.onload = () => {
         section:"covid19",
         dataFile: "assets/data/covid19/own_device",
         displayPercentage: true,
-        subtitle: "71 skipped",
         title: "Do you have access to your own device for academic purposes?"
     });
 
@@ -1720,13 +1718,13 @@ window.onload = () => {
     //     title: "Do you live with someone who is immunocompromised?"
     // });
 
-    sota.pieChart({
-        section:"covid19",
-        dataFile: "assets/data/covid19/test_positive",
-        displayPercentage: true,
-        subtitle: "73 skipped",
-        title: "Have you tested positive for Covid-19?"
-    });
+    // sota.pieChart({
+    //     section:"covid19",
+    //     dataFile: "assets/data/covid19/test_positive",
+    //     displayPercentage: true,
+    //     subtitle: "73 skipped",
+    //     title: "Have you tested positive for Covid-19?"
+    // });
 
     // sota.pieChart({
     //     section:"covid19",
@@ -1739,7 +1737,6 @@ window.onload = () => {
         section:"covid19",
         dataFile: "assets/data/covid19/place_of_stay",
         displayPercentage: true,
-        subtitle: "74 skipped",
         title: "Where did you stay for the majority of your remote learning experience?"
     });
 
