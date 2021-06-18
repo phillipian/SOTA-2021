@@ -1160,7 +1160,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs/alcoholXclass",
         displayPercentage: true,
         groupLabelStyle: "onBar",
-        title: "Drugs and alcohol consumption by the numbers",
+        title: "Alcohol",
         subtitle: "Have you ever consumed alcohol recreationally?"
     });
 
@@ -1169,6 +1169,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs/marijuanaXclass",
         displayPercentage: true,
         groupLabelStyle: "onBar",
+        title: "Marijuana",
         subtitle: "Have you ever used marijuana?"
     });
 
@@ -1177,6 +1178,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs/tobaccoXclass",
         displayPercentage: true,
         groupLabelStyle: "onBar",
+        title: "tobacco",
         subtitle: "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?"
     });
 
@@ -1185,6 +1187,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs/juulXclass",
         displayPercentage: true,
         groupLabelStyle: "onBar",
+        title:" vaping ",
         subtitle: "Have you ever \"juuled\" or used a similar e-cigarette/pod vape nicotine-based product?"
     });
 
@@ -1351,6 +1354,26 @@ window.onload = () => {
     });
 
 
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/anxietyXgender",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Anxiety by Gender identity",
+        subtitle: "Have you ever been diagnosed with anxiety?"
+    });
+
+    sota.stackedBarChart({
+        section: "wellness",
+        dataFile: "assets/data/wellness/anxietyXclass",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "Anxiety by Class year",
+        subtitle: "Have you ever been diagnosed with anxiety?"
+    });
+
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/insecure",
@@ -1427,7 +1450,8 @@ window.onload = () => {
         section:"wellness",
         dataFile: "assets/data/wellness/hours_social_media",
         sorted: false,
-        title: "Approximately how many hours a day do you spend on social media?",
+        title: "social media usage",
+        subtitle: "Approximately how many hours a day do you spend on social media?",
     });
 
     sota.bigNumber({
@@ -1463,7 +1487,6 @@ window.onload = () => {
         title: "skipping meals"
     });
 
-
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/see_counselor",
@@ -1472,12 +1495,12 @@ window.onload = () => {
         title:"Sykes counseling"
     });
 
-    sota.pieChart({
-        section:"wellness",
-        dataFile: "assets/data/wellness/see_counselor",
-        sorted: false,
-        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
-    });
+    // sota.pieChart({
+    //     section:"wellness",
+    //     dataFile: "assets/data/wellness/see_counselor",
+    //     sorted: false,
+    //     subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
+    // });
 
     sota.stackedBarChart({
         section: "wellness",
@@ -1485,17 +1508,18 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         showLegend: true,
         labelStyle: "onBar",
-        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you seen a counselor?"
+        title: 'sykes counseling resources',
+        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?"
     });
 
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/sykesmentalXdepression",
-        groupLabelStyle: "onBar",
-        showLegend: true,
-        labelStyle: "onBar",
-        subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you been diagnosed with depression?"
-    });
+    // sota.stackedBarChart({
+    //     section: "wellness",
+    //     dataFile: "assets/data/wellness/sykesmentalXdepression",
+    //     groupLabelStyle: "onBar",
+    //     showLegend: true,
+    //     labelStyle: "onBar",
+    //     subtitle: "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient? X Have you been diagnosed with depression?"
+    // });
 
     sota.pieChart({
         section:"wellness",
@@ -1541,41 +1565,15 @@ window.onload = () => {
     //     labelStyle: "onBar",
     //     title: "Have you ever been bullied or hazed while at Andover?"
     // });
-
-
-
-
     sota.pieChart({
         section:"wellness",
         dataFile: "assets/data/wellness/take_care",
         sorted: false,
-        title: "Do you have enough time in your day-to-day life as an Andover student to adequately take care of yourself?",
-        subtitle:"Editor's note: 25 skipped"
+        title: "self-care",
+        subtitle: "Do you have enough time in your day-to-day life as an Andover student to adequately take care of yourself?",
     });
 
 
-
-
-
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/anxietyXgender",
-        showLegend: true,
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        title: "Anxiety by Gender identity",
-        subtitle: "Have you ever been diagnosed with anxiety?"
-    });
-
-    sota.stackedBarChart({
-        section: "wellness",
-        dataFile: "assets/data/wellness/anxietyXclass",
-        showLegend: true,
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        title: "Anxiety by Class year",
-        subtitle: "Have you ever been diagnosed with anxiety?"
-    });
 
     //covid-19
     sota.stackedBarChart({
