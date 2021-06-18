@@ -16,7 +16,7 @@ sota.sotaConfig.sections = [
       "blurb": "At Andover, 84.3% of Juniors, 73.1% of Lowers, 60.8% of Uppers, and 40.2% of Seniors have never engaged in sexual activity—defined as digital, oral, vaginal, or anal sex. 80.2% of respondents believe that there is a hook-up culture at Andover, but 23.8% of respondents have felt pressured to participate in it. 78.1% of men feel comfortable telling friends that they masturbate, while only 38.1% of women feel the same way. 41.1% of respondents believe that a rape culture exists at Andover. 25.2% of respondents reported having been sexualized or desexualized due to their racial-ethnic identity, with 15.8% of respondents experiencing sexual racism on-campus. "
     },
     {"slug": "drugs", "name": "Drugs & Alcohol", "colors": ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
-      "blurb": "52.8% of respondents have recreationally consumed alcohol either on campus, off campus, or both. Additionally, 33.1% of student leaders have consumed drugs or alcohol in their dorms.70.7% of respondents believe that the use of recreational drugs or alcohol is normalized at Andover, while 18.0% of respondents have felt pressured by recreational drugs or alcohol on campus. 21.6% of respondents reported that they consume recreational drugs or alcohol more frequently than they did prior to the pandemic."
+      "blurb": "52.8% of respondents have recreationally consumed alcohol either on campus, off campus, or both. Additionally, 33.1% of student leaders have consumed drugs or alcohol in their dorms. 70.7% of respondents believe that the use of recreational drugs or alcohol is normalized at Andover, while 18.0% of respondents have felt pressured by recreational drugs or alcohol on campus. 21.6% of respondents reported that they consume recreational drugs or alcohol more frequently than they did prior to the pandemic."
     },
     {"slug": "wellness", "name": "Wellness", "colors": ["#69B645", "#99CB89", "#98C970", "#B1D281", "#CEDFA6","#E3EFCE", "#BAE5AE"],
       "blurb": "Only 26.4% of respondents reported having sufficient time to adequately take care of themselves in their day-to-day life as an Andover student, with another 54.0% saying they had somewhat enough time. On average, Andover students sleep under seven hours per night. 67.4% of respondents report skipping meals to catch up on sleep or homework. Moreover, 27.5% of respondents said that due to dietary restrictions, they were prevented from eating a main course meal from Paresky Commons at least once per month. While 83.4% of respondents consider themselves happy at Andover, just 68.9% of respondents think that Andover students are happy. A majority of respondents (51.3%) believe that the mental health and counseling resources provided by the Sykes Wellness Center are not sufficient. 79.8% of respondents have felt insecure about their intelligence, and 82.4% of respondents have felt insecure about their physical appearance. When correlated with gender identity, 69.4% of men feel insecure about their physical appearance as opposed to 92.9% of women. "
@@ -27,7 +27,7 @@ sota.sotaConfig.sections = [
     {"slug": "community", "name": "Community Diversity", "colors": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"],
       "blurb": "In regards to what causes social divide between students at Andover, 49.6% of respondents believed it to be sexual orientation, 65.6% of respondents believed it to be political belief, 60.5% of respondents believed it to be socioeconomic status, and 61.6% of respondents believed it to be race (respondents may overlap). 95.2% of respondents from the Class of 2021 believe that social divides exist at Andover, while 81.0% of respondents from the Class of 2024 believe the same. 32.0% of respondents who identify as white believe that the faculty is lacking in racial diversity, while 68.9% of Black-identifying respondents, 66.7% of Indigenous-identifying respondents, 41.7% of Asian-identifying respondents, and 33.3% of Native Hawaiian and Pacific Islander-identifying respondents say the same. "
     },
-    {"slug": "senior", "name": "Senior Sota", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"]},
+    {"slug": "senior", "name": "Senior Sota", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5", "#7CB7D1", "#8dd1e9","#c6e6f3","#e3f4fb"]},
 ]
 
 sota.setColors(sota.sotaConfig);
@@ -47,11 +47,11 @@ window.onload = () => {
 // GENERAL
 
     sota.bigNumber({
-      section: "general", number: "949", title: "", subtitle: "students responded",
+      section: "general", number: "949", title: "", subtitle: "students responded.",
     });
 
     sota.bigNumber({
-      section: "general", number: "81.8%", title: "", subtitle: "of the student body participated in this survey",
+      section: "general", number: "81.8%", title: "", subtitle: "of the student body participated in this survey.",
     });
 
     sota.barChart({
@@ -76,7 +76,6 @@ window.onload = () => {
         totalResp: 947,
         displayPercentage: true,
         title: "WHAT IS YOUR SEX?",
-        subtitle: "Editor’s note: two students did not select a class year."
     });
 
     sota.pieChart({
@@ -91,8 +90,7 @@ window.onload = () => {
         dataFile: "assets/data/general/gender",
         totalResp: 944,
         displayPercentage: true,
-        title: "WHAT IS YOUR GENDER IDENTITY?",
-        subtitle: "Editor’s note: five students did not select a class year."
+        title: "WHAT IS YOUR GENDER IDENTITY?"
     });
 
     sota.pieChart({
@@ -108,7 +106,7 @@ window.onload = () => {
         totalResp: 982,
         displayPercentage: true,
         title: "What are your preferred gender pronouns?",
-        subtitle: "Editor’s note: respondents were able to select multiple responses."
+        subtitle: "Editor’s note: Respondents were able to select multiple responses."
     });
 
     sota.columnChart({
@@ -116,7 +114,7 @@ window.onload = () => {
       dataFile: "assets/data/general/race",
       totalResp: 1057,
       title: "What is your race?",
-      subtitle: "Editor’s Note: respondents were given the option to select more than one answer if applicable.",
+      subtitle: "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
     });
 
     sota.barChart({
@@ -124,7 +122,7 @@ window.onload = () => {
       dataFile: "assets/data/general/ethnicity",
       totalResp: 1349,
       title: "What is your ethnicity?",
-      subtitle: "Editor’s Note: respondents were given the option to select more than one answer if applicable.",
+      subtitle: "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
     });
 
     sota.stackedBarChart({
@@ -224,7 +222,8 @@ window.onload = () => {
         section: "politics",
         dataFile: "assets/data/politics/political_affiliation",
         totalResp: 931,
-        title: "Political Affiliation"
+        title: "Political Affiliation",
+        subtitle: "What is your political affiliation?"
     });
 
     sota.stackedBarChart({
@@ -245,7 +244,7 @@ window.onload = () => {
 
     sota.stackedBarChart({
         section: "politics",
-        dataFile: "assets/data/politics/politics_old/censorshipXpolitics",
+        dataFile: "assets/data/politics/censorshipXpolitics",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         showLegend: true,
@@ -270,7 +269,7 @@ window.onload = () => {
     });
 
     sota.bigNumber({
-      section: "politics", number: "92.7%", title: "Feminism by Definition", subtitle: "Of respondents who do not consider themselves feminists support the  \"the advocacy of women's rights on the ground of the equality of the sexes\" ",
+      section: "politics", number: "92.7%", title: "Feminism by Definition", subtitle: "of respondents who do not consider themselves feminists support the  \"the advocacy of women's rights on the ground of the equality of the sexes.\" ",
     })
 
     sota.stackedBarChart({
@@ -341,7 +340,7 @@ window.onload = () => {
         groupLabelStyle: "onBar",
         showLegend: true,
         title: "Prison System",
-        subtitle: "Do you believe that the current prison system in the United States should be alterede"
+        subtitle: "Do you believe that the current prison system in the United States should be altered?"
     });
 
     sota.pieChart({
@@ -352,7 +351,7 @@ window.onload = () => {
     });
 
     sota.bigNumber({
-      section: "politics", number: "33.3%", title: "\"Reverse Racism\"", subtitle: "Of respondents believe that white people can experience racism",
+      section: "politics", number: "33.3%", title: "\"Reverse Racism\"", subtitle: "of respondents believe that white people can experience racism.",
     });
 
     sota.stackedColumnChart({
@@ -381,12 +380,12 @@ window.onload = () => {
     sota.pieChart({
         section: "politics",
         dataFile: "assets/data/politics/drug_regulation",
-        title:"Drug Regulation !NEED FIX!",
+        title:"Drug Regulation",
         subtitle:"Do you support the legalization of marijuana?"
     });
 
     sota.bigNumber({
-      section: "politics", number: "75.6%", title: "Minimum Wage", subtitle: "Of respondents support raising the federal minimum wage to $15 per hour",
+      section: "politics", number: "75.6%", title: "Minimum Wage", subtitle: "of respondents support raising the federal minimum wage to $15 per hour.",
     });
 
 
@@ -408,7 +407,7 @@ window.onload = () => {
     })
 
     sota.bigNumber({
-      section: "politics", number: "86.9%", title: "Gun Control", subtitle: "Of respondents believe that gun control laws in the United States should be stricter.",
+      section: "politics", number: "86.9%", title: "Gun Control", subtitle: "of respondents believe that gun control laws in the United States should be stricter.",
     });
 
 //Campus Culture
@@ -577,10 +576,10 @@ window.onload = () => {
 // School
 
     sota.bigNumber({
-      section: "school", number: "4.53", title: "Time Spent on Coursework", subtitle: "average hours spent on coursework daily,",
+      section: "school", number: "4.53", title: "Time Spent on Coursework", subtitle: "average hours spent on coursework daily.",
     });
 
-    sota.lineGraph({section: "school", dataFile: "assets/data/school/gpa", maxVal: 160, title: "G.P.A", subtitle: "What was your rounded Winter 2020-2021 G.P.A?"})
+    sota.lineGraph({section: "school", dataFile: "assets/data/school/gpa", maxVal: 180, title: "G.P.A", subtitle: "What was your rounded Winter 2020-2021 G.P.A?"})
 
     sota.multiLineGraph({
       section: "school",
@@ -589,7 +588,6 @@ window.onload = () => {
       maxVal: 24,
       minVal: 0,
       title: "G.P.A. and Gender",
-      subtitle: "THIS IS WRONG"
     })
 
     sota.bigNumber({
@@ -879,7 +877,7 @@ window.onload = () => {
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         showLegend: false,
-        title: "Social Divide by Class Year !NEED FIX!",
+        title: "Social Divide by Class Year",
         subtitle: "Do you feel like there is a social divide at Andover (any)?"
     });
 
@@ -1292,6 +1290,7 @@ window.onload = () => {
         section:"drugs",
         dataFile: "assets/data/drugs/sold_drugs",
         displayPercentage: true,
+        sorted: false,
         title: "sales",
         subtitle: "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?"
     });
@@ -1356,7 +1355,7 @@ window.onload = () => {
         section:"wellness",
         dataFile: "assets/data/wellness/insecure",
         sorted: false,
-        title: "insecurity",
+        title: "body insecurity",
         subtitle: "Do you feel insecure about your body, physical health, and/or appearance?"
     });
 
@@ -1384,6 +1383,7 @@ window.onload = () => {
         section:"wellness",
         dataFile: "assets/data/wellness/insecure_brain",
         sorted: false,
+        title: "academic insecurity",
         subtitle: "Do you feel insecure about your academic ability and/or intelligence?"
     });
 
@@ -1392,6 +1392,7 @@ window.onload = () => {
         dataFile: "assets/data/wellness/happiness",
         showLegend: true,
         labelStyle: "onBar",
+        title: "HAPPINESS",
         subtitle: "Generally speaking, do you consider yourself happy at Andover?"
     });
 
@@ -1400,7 +1401,7 @@ window.onload = () => {
         dataFile: "assets/data/wellness/others_happiness",
         showLegend: true,
         labelStyle: "onBar",
-        title:" happiness",
+        title:" percieved happiness",
         subtitle: "Generally speaking, do you think that Andover students are happy?"
     });
 
@@ -1432,7 +1433,7 @@ window.onload = () => {
     sota.bigNumber({
         section: "wellness",
         number:"2.91",
-        subtitle: "hours spent on social media per day on average"
+        subtitle: "hours spent on social media per day on average."
     })
 
     sota.barChart({
@@ -1516,7 +1517,7 @@ window.onload = () => {
     sota.bigNumber({
         section: 'wellness',
         number: " 70.8%",
-        subtitle: "of students feel as though they have an adequate mental and/or emotional support system on campus"
+        subtitle: "of students feel as though they have an adequate mental and/or emotional support system on campus."
     })
 
     // sota.pieChart({
@@ -1530,7 +1531,7 @@ window.onload = () => {
     sota.bigNumber({
         section:"wellness",
         number:"118",
-        subtitle: "students have been bullied or hazed while at Andover",
+        subtitle: "students have been bullied or hazed while at Andover.",
         title: " Bullying & hazing"
     })
     // sota.stackedBarChart({
@@ -1615,7 +1616,7 @@ window.onload = () => {
         dataFile: "assets/data/covid19/andover_response",
         showLegend: true,
         title: "Andover's Reponse to the pandemic",
-        subtitle: "Generally speaking, how would you categorize Andover's response to the COVID-19 pandemic?"
+        subtitle: "Generally speaking, how would you categorize Andover's response to the Covid-19 pandemic?"
     });
 
     sota.bigNumber({
@@ -1654,7 +1655,7 @@ window.onload = () => {
         section:"covid19",
         number:"8.7%",
         title:"covid-19 infections",
-        subtitle:"of respondents have tested postitive for Covid-19"
+        subtitle:"of respondents have tested postitive for Covid-19."
     })
 
     sota.barChart({
@@ -1669,7 +1670,7 @@ window.onload = () => {
         section:"covid19",
         number:"25.6%",
         title:"LIVING WITH SOMEONE WHO IS IMMUNOCOMPROMISED",
-        subtitle:"of respondents live with someone who is immunocompromised"
+        subtitle:"of respondents live with someone who is immunocompromised."
     })
 
     sota.stackedBarChart({
