@@ -269,15 +269,9 @@ window.onload = () => {
         subtitle: "How do you get your news?"
     });
 
-    sota.stackedBarChart({
-        section: "politics",
-        dataFile: "assets/data/politics/womens_rightsXfeminist",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true,
-        title: "Feminism",
-        subtitle: "Do you support \"the advocacy of women'srights on the ground of the equality of the sexes?\" "
-    });
+    sota.bigNumber({
+      section: "politics", number: "92.7%", title: "Feminism by Definition", subtitle: "Of respondents who do not consider themselves feminists support the  \"the advocacy of women's rights on the ground of the equality of the sexes\" ",
+    })
 
     sota.stackedBarChart({
         section: "politics",
