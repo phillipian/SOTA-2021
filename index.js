@@ -1771,17 +1771,19 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: " Generally speaking, do you consider yourself happy at Andover?"
+        title: "Happiness",
+        subtitle: "Generally speaking, do you consider yourself happy at Andover?"
     });
 
-    //please do a grouped bar chart for this (see sexual activity in sota2020 as an example)
-    sota.stackedBarChart({
+    sota.groupedBarChart({
         section: "senior",
         dataFile: "assets/data/senior/sexual_activity",
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "sexual activity NEED FIX SEE COMMENT IN CODE"
+        totalResp: {2018: 230, 2019: 361, 2020: 524, 2021: 519},
+        title: "Sexual Activity",
+        subtitle: "What form(s) of sexual activity have you engaged in?"
     });
 
     sota.stackedColumnChart({
@@ -1808,7 +1810,8 @@ window.onload = () => {
         showLegend: true,
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        title: "Do you believe there is rape culture—“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)—at Andover?"
+        title: "Do you believe there is rape culture at Andover?",
+        subtitle: "Rape culture: \“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse\” (Oxford Dictionaries)."
     });
 
     sota.stackedColumnChart({
@@ -1840,6 +1843,45 @@ window.onload = () => {
         subtitle: "Have you ever been in a committed relationship?"
     });
 
+    sota.stackedBarChart({
+      section: "senior",
+      dataFile: "assets/data/senior/family",
+      showLegend: true,
+      labelStyle: "onBar",
+      groupLabelStyle: "onBar",
+      title: "Andover and Family",
+      subtitle: "Has attending Andover affected your relationship ith your family?"
+    })
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/come_to_andover",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "IN RETROSPECT, WOULD YOU STILL MAKE THE DECISION TO COME TO ANDOVER?",
+        // subtitle: "Have you ever been in a committed relationship?"
+    });
+
+    sota.stackedColumnChart({
+        section: "senior",
+        dataFile: "assets/data/senior/children",
+        showLegend: true,
+        labelStyle: "onBar",
+        groupLabelStyle: "onBar",
+        title: "WOULD YOU WANT YOUR CHILDREN TO ATTEND ANDOVER?",
+        // subtitle: "Have you ever been in a committed relationship?"
+    });
+
+    sota.stackedBarChart({
+      section: "senior",
+      dataFile: "assets/data/senior/political_affiliation",
+      showLegend: true,
+      labelStyle: "onBar",
+      groupLabelStyle: "onBar",
+      title: "Political Affiliation",
+      subtitle: "What is your political affiliation?"
+    })
 
     sota.sotaMasonry();
 }
