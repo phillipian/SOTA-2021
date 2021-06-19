@@ -997,12 +997,14 @@ window.onload = () => {
         subtitle: "Have you ever contracted a Sexually Transmitted Infection (STI) or Sexually Transmitted Disease (STD)?"
     });
 
-    sota.pieChart({
-        section:"sex",
-        dataFile: "assets/data/sex/sexed",
-        displayPercentage: true,
-            title: "Do you think that your sexual education at Andover has been/is adequate?"
-        });
+    sota.lineGraph({
+        section: "sex",
+        dataFile: "assets/data/sex/sex_ed",
+        title: "Sexual Education",
+        subtitle: "Do you think that your sexual education at Andover has been/is adequate?",
+        inputIsPercentage: true
+    })
+
     sota.pieChart({
         section:"sex",
         dataFile: "assets/data/sex/hookup_culture",
@@ -1040,7 +1042,6 @@ window.onload = () => {
         subtitle: "Have you ever felt pressured by a partner to engage in sexual activity?"
     });
 
-
     sota.stackedBarChart({
         section:"sex",
         dataFile: "assets/data/sex/rape_culture",
@@ -1050,7 +1051,6 @@ window.onload = () => {
         subtitle: "Rape culture: \“a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse\” (Oxford Dictionaries)"
     });
 
-
     sota.stackedBarChart({
         section: "sex",
         dataFile: "assets/data/sex/verbalconsent",
@@ -1059,8 +1059,6 @@ window.onload = () => {
         title:"consent",
         subtitle: "Do you consistently ask your partner for verbal consent?"
     });
-
-
 
     sota.stackedBarChart({
         section: "sex",
