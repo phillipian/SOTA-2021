@@ -1,7 +1,7 @@
 sota.sotaConfig.sections = [
     {"slug": "general", "name": "General", "colors": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"]},
     {"slug": "politics", "name": "Politics", "colors": ["#2C3278", "#5D5797", "#7D78AD", "#948EB9", "#A8A3C6", "#BFBDD5", "#ACA0C0", "#DFDBE7"],
-      "blurb": "After the increased media coverage of social and systemic injustices this past year, 40.7% of respondents’ political views shifted to the left, while 11.8% respondents reported that their views shifted to the right, and 47.6% believe their ideologies remained the same. However, support for the Black Lives Matter Movement did not drastically change from the previous year. From the 89.9% of respondents who supported the movement in the 2020 State of the Academy, 90.4% of respondents support the movement in 2021––after the racial justice protests of the spring and summer of 2020 sparked by George Floyd’s murder and nationwide police brutality. While 33.3% of respondents believe that white people can experience racism, that number is 44.9% among Juniors and 23.3% among Seniors. An overwhelming majority of respondents believe that corporations and the government are responsible for addressing climate change—92.2% and 92.5% respectively—while 75.9% of respondents believe that individual people are responsible, and 1.5% say that humans are not responsible at all. "
+      "blurb": "After the increased media coverage of social and systemic injustices this past year, 40.7% of respondents’ political views shifted to the left, while 11.8% respondents reported that their views shifted to the right, and 47.6% believe their ideologies remained the same. However, support for the Black Lives Matter Movement did not drastically change from the previous year. From the 89.9% of respondents who supported the movement in the 2020 State of the Academy, 90.4% of respondents support the movement in 2021—after the racial justice protests of the spring and summer of 2020 sparked by George Floyd’s murder and nationwide police brutality. While 33.3% of respondents believe that white people can experience racism, that number is 44.9% among Juniors and 23.3% among Seniors. An overwhelming majority of respondents believe that corporations and the government are responsible for addressing climate change—92.2% and 92.5% respectively—while 75.9% of respondents believe that individual people are responsible, and 1.5% say that humans are not responsible at all. "
     },
     {"slug": "campus", "name": "Campus Culture", "colors": ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
       "blurb": "In response to Andover’s recent emphasis on anti-racist work, 60.1% of respondents believe that Andover’s anti-racist work is at least somewhat sufficient. While 34.6% believe that the Martin Luther King Jr. Day’s curriculum is adequate, 60.4% of respondents advocate for a similar ‘day on’ for Indigenous Peoples’ Day. A majority of respondents (57.9%) say that the Shuman Office of Admissions does not accurately represent the school. 73.2% of non-Varsity athletes believe that Andover prioritizes athletics over other extracurriculars, while 62.4% of Varsity athletes say the same. Only 11.5% of respondents believe that Andover is doing enough to combat climate change. "
@@ -839,7 +839,7 @@ window.onload = () => {
     sota.barChart({
         section: "community",
         dataFile: "assets/data/community/faculty_diversity",
-        totalResp: 1020,
+        totalResp: 949,
         displayPercentage: true,
         title: "Faculty Diversity",
         subtitle: "Do you think the faculty is lacking in diversity in _______________ ?"
@@ -955,17 +955,6 @@ window.onload = () => {
     });
 
     //sex
-
-    // sota.barChart({
-    //     section:"sex",
-    //     dataFile: "assets/data/sex/sexual_activity",
-    //     displayPercentage: true,
-    //     groupLabelStyle: "onBar",
-    //     totalResp: 949,
-    //     subtitle: "What form(s) of sexual activity have you engaged in?"
-    // });
-
-
     sota.barChart({
         section:"sex",
         dataFile: "assets/data/sex/use_protection",
