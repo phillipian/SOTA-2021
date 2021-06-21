@@ -8,7 +8,7 @@ Despite two classes being unfamiliar with a printed version of the State of the 
 
 This year, the survey included content warnings that allowed participants to skip specific questions that may have been potentially triggering without viewing the question itself. We sincerely thank members of the student body for their willingness to share information and personal experiences for this special issue of *The Phillipian*, and we hope that the State of the Academy will serve to inform, enlighten, and create a more holistic narrative of the students at Andover. 
 
-Access the traditional PDF version of SOTA [here](http://pdf.phillipian.net/2021/06020021.pdf).
+Access the traditional PDF version of SOTA [here](http://pdf.phillipian.net/2021/06202021.pdf).
 
 ### License
 
