@@ -1,6 +1,6 @@
 # State of the Academy 2021
 
-The digital publication for *The Phillipian*'s annual State of the Academy survey project by Jeffrey Shi '21 Digital Editor CXLIV and Jessica He '21 Digital Editor CXLIV. Built using sota.js.
+The digital publication for *The Phillipian*'s annual State of the Academy survey project by Jeffrey Shi '22 Digital Editor CXLIV and Jessica He '22 Digital Editor CXLIV. Built using sota.js.
 
 On April 12, *The Phillipian*, vol. CXLIV, sent out the 2021 “State of the Academy” survey to all Andover students in the hopes of obtaining valuable information about the school community.
 
